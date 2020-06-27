@@ -1,8 +1,18 @@
-<app-menu></app-menu>
-<input>
-<app-person></app-person>
-<button>Add money</button>
-<button>Send money</button>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <!-- tutaj poniżej dodać klase is-active -->
+  <div class="mobile-menu">
+    <div class="hamburger hamburger--arrow" (click)="hamburgerActive() " [ngClass]="status ? 'is-active' : ''">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
+    </div>
+  </div>
+  <app-menu class="menu"></app-menu>
+  <div><input>
+    <app-person></app-person>
+    <button>Add money</button>
+    <button>Send money</button>
+    <router-outlet></router-outlet>
+  </div>
+</div>
 <!-- <app-recent-activity></app-recent-activity> -->

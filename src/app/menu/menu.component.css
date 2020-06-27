@@ -1,3 +1,30 @@
 .menu {
-  /* background-color: #036672; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #036672;
+  transform: translateX(-100%);
+}
+.menu__ul {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  padding-inline-start: 0;
+  justify-content: space-between;
+}
+.menu__li {
+  list-style-type: none;
+  padding-top: 10px;
+  width: 100px;
+  margin: 0 auto;
+}
+.menu__a {
+  color: white;
+  text-decoration: none;
+}
+.menu__icon {
+  transform: translateY(20%);
+  padding-right: 5px;
 }

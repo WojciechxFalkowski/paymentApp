@@ -9,6 +9,7 @@ import { RecentActivityComponent } from './recent-activity/recent-activity.compo
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { HistoryComponent } from './history/history.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HistoryComponent } from './history/history.component';
       { path: 'help', component: HistoryComponent },
       { path: 'privacy', component: HistoryComponent },
     ]),
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
