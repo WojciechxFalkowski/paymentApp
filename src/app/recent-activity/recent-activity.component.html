@@ -1,3 +1,4 @@
+<app-overview></app-overview>
 <h3>Recent activity</h3>
 <table>
   <tr>
@@ -6,10 +7,11 @@
     <th>Status</th>
     <th>Date</th>
   </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Germany</td>
+  <tr *ngFor="let transtaction of transactions">
+    <td>{{transtaction.transaction}}</td>
+    <td>{{transtaction.amount}} <span>USD</span></td>
+    <td>{{transtaction.status}}</td>
+    <td>{{transtaction.date|date:'MMM dd, yyyy'}}</td>
+
   </tr>
 </table>
