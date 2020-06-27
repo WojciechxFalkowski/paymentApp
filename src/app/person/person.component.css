@@ -1,0 +1,13 @@
+.app-person {
+  padding-top: 100px;
+  text-align: center;
+}
+.face {
+  display: inline-block;
+  border-radius: 50%;
+}
+.person {
+}
+.name {
+  font-weight: bold;
+}
