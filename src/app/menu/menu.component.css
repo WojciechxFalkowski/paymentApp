@@ -1,12 +1,6 @@
 .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #036672;
-  transform: translateX(-100%);
 }
+
 .menu__ul {
   display: flex;
   height: 70vh;

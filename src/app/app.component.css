@@ -5,6 +5,8 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
+  transform: scale(0.7);
 }
 
 /* HAMBURGER */
@@ -81,5 +83,15 @@
   transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: #036672;
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+.menu--is-active {
+  transform: translateX(0%);
 }

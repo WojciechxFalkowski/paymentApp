@@ -7,7 +7,7 @@
       </div>
     </div>
   </div>
-  <app-menu class="menu"></app-menu>
+  <app-menu (eventA)="selected($event)" class="menu" [ngClass]="status ? 'menu--is-active' : ''"></app-menu>
   <div><input>
     <app-person></app-person>
     <button>Add money</button>

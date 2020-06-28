@@ -2,7 +2,8 @@
   <img class="logo" src="./../../assets/images/logo2.png" alt="">
   <ul class="menu__ul">
     <li class="menu__li" *ngFor="let item of menu">
-      <img class="menu__icon" src={{item.icon}} alt=""><a class="menu__a" routerLink="{{item.url}}">{{item.name}}</a>
+      <img class="menu__icon" src={{item.icon}}
+        alt=""><a (click)="select(item)" class="menu__a" routerLink="{{item.url}}">{{item.name}}</a>
     </li>
   </ul>
 </div>

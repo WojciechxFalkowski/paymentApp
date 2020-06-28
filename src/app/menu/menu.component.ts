@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Menu } from './../models/menu';
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
-  // faCoffee = faCoffee;
+  @Output()
+  eventA = new EventEmitter<string>();
   menu: Array<Menu> = [
     {
       name: 'Home',
@@ -54,7 +56,11 @@ export class MenuComponent implements OnInit {
       icon: './../../assets/images/menu-icons/privacy.png',
     },
   ];
+
   constructor() {}
 
   ngOnInit(): void {}
+  select(item) {
+    this.eventA.emit(item);
+  }
 }
