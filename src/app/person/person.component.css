@@ -1,10 +1,15 @@
 .app-person {
-  padding-top: 100px;
-  text-align: center;
+  display: flex;
+  padding-top: 1vh;
+  align-items: center;
+  justify-content: center;
 }
 .face {
+  width: 52px;
+  height: 52px;
   display: inline-block;
   border-radius: 50%;
+  padding-right: 2vw;
 }
 .person {
 }

@@ -95,3 +95,42 @@
 .menu--is-active {
   transform: translateX(0%);
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+.label {
+  padding-top: 2vh;
+}
+.label__img {
+  transform: translateY(20%);
+}
+.label__input {
+  border: none;
+  /* padding: 5px 20px; */
+  font-size: 1rem;
+}
+.main__buttons {
+  align-self: flex-end;
+  margin-right: 3vw;
+}
+.main__button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+.add-money {
+  margin-right: 3vw;
+  background-color: white;
+  border-color: grey;
+}
+.send-money {
+  background-color: #036672;
+  color: white;
+  border-color: #036672;
+}

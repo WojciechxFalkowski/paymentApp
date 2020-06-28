@@ -8,10 +8,13 @@
     </div>
   </div>
   <app-menu (eventA)="selected($event)" class="menu" [ngClass]="status ? 'menu--is-active' : ''"></app-menu>
-  <div><input>
+  <div class="main"><label class="main__label label" for=""><img class="label__img" src="../assets/images/search.png"
+        alt=""><input class="label__input" placeholder="Search transaction"></label>
     <app-person></app-person>
-    <button>Add money</button>
-    <button>Send money</button>
+    <div class="main__buttons">
+      <button class="main__button add-money">Add money</button>
+      <button class="main__button send-money">Send money</button>
+    </div>
     <router-outlet></router-outlet>
   </div>
 </div>
