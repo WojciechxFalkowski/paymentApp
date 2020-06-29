@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   transform: scale(0.7);
 }
 
@@ -91,6 +91,7 @@
   background-color: #036672;
   transform: translateX(-100%);
   transition: 0.5s;
+  z-index: 1;
 }
 .menu--is-active {
   transform: translateX(0%);
@@ -109,28 +110,14 @@
   transform: translateY(20%);
 }
 .label__input {
+  padding-left: 1vw;
+  margin-left: 1vw;
   border: none;
   /* padding: 5px 20px; */
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(165, 165, 165);
 }
-.main__buttons {
-  align-self: flex-end;
-  margin-right: 3vw;
-}
-.main__button {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-}
-.add-money {
-  margin-right: 3vw;
-  background-color: white;
-  border-color: grey;
-}
-.send-money {
-  background-color: #036672;
-  color: white;
-  border-color: #036672;
+.active-page {
+  background-color: #f1f5f9;
 }

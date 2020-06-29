@@ -1,4 +1,4 @@
-.app-person {
+.app-personality {
   display: flex;
   padding-top: 1vh;
   align-items: center;
@@ -15,4 +15,24 @@
 }
 .name {
   font-weight: bold;
+}
+.main__buttons {
+  text-align: right;
+}
+.main__button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+.add-money {
+  margin-right: 3vw;
+  background-color: white;
+  border-color: rgb(221, 221, 221);
+}
+.send-money {
+  background-color: #036672;
+  color: white;
+  border-color: #036672;
 }

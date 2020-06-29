@@ -1,17 +1,19 @@
 <app-overview></app-overview>
-<h3>Recent activity</h3>
-<table>
-  <tr>
-    <th>Transaction</th>
-    <th>Amount</th>
-    <th>Status</th>
-    <th>Date</th>
-  </tr>
-  <tr *ngFor="let transtaction of transactions">
-    <td>{{transtaction.transaction}}</td>
-    <td>{{transtaction.amount}} <span>USD</span></td>
-    <td>{{transtaction.status}}</td>
-    <td>{{transtaction.date|date:'MMM dd, yyyy'}}</td>
+<div class="recent-activity">
+  <h4 class="recent-activity__h4">Recent activity</h4>
+  <table>
+    <tr>
+      <th>Transaction</th>
+      <th>Amount</th>
+      <th>Status</th>
+      <th>Date</th>
+    </tr>
+    <tr *ngFor="let transtaction of transactions">
+      <td>{{transtaction.transaction}}</td>
+      <td>{{transtaction.amount}} <span>USD</span></td>
+      <td>{{transtaction.status}}</td>
+      <td>{{transtaction.date|date:'MMM dd, yyyy'}}</td>
 
-  </tr>
-</table>
+    </tr>
+  </table>
+</div>
