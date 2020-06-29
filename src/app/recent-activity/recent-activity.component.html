@@ -1,18 +1,22 @@
 <app-overview></app-overview>
 <div class="recent-activity">
-  <h4 class="recent-activity__h4">Recent activity</h4>
-  <table>
-    <tr>
-      <th>Transaction</th>
-      <th>Amount</th>
-      <th>Status</th>
-      <th>Date</th>
+  <h4 class="recent-activity__h4">Recent activity ({{transactions.length}})</h4>
+  <table class="recent-activity__table">
+    <tr class="recent-activity__tr">
+      <th class="recent-activity__th">{{"Transaction"|uppercase}}</th>
+      <th class="recent-activity__th">{{"Amount"|uppercase}}</th>
+      <th class="recent-activity__th">{{"Status"|uppercase}}</th>
+      <th class="recent-activity__th">{{"Date"|uppercase}}</th>
     </tr>
-    <tr *ngFor="let transtaction of transactions">
-      <td>{{transtaction.transaction}}</td>
-      <td>{{transtaction.amount}} <span>USD</span></td>
-      <td>{{transtaction.status}}</td>
-      <td>{{transtaction.date|date:'MMM dd, yyyy'}}</td>
+    <tr class="recent-activity__tr" *ngFor="let transtaction of transactions">
+      <td class="recent-activity__td">{{transtaction.transaction}}</td>
+      <td class="recent-activity__td">{{transtaction.amount}} <span>USD</span></td>
+      <td class="recent-activity__td">
+        <p
+          [ngClass]="transtaction.status=='Success'? 'recent-activity__p--green' : transtaction.status=='Processing'?'recent-activity__p--yellow':''">
+          {{transtaction.status}}</p>
+      </td>
+      <td class="recent-activity__td">{{transtaction.date|date:'MMM dd, yyyy'}}</td>
 
     </tr>
   </table>
