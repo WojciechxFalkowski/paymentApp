@@ -9,6 +9,8 @@ import { RecentActivityComponent } from './recent-activity/recent-activity.compo
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { HistoryComponent } from './history/history.component';
+import { InputServiceService } from './services/input-service.service';
+import { RecentActivityService } from './services/recent-activity.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { HistoryComponent } from './history/history.component';
       { path: 'privacy', component: HistoryComponent },
     ]),
   ],
-  providers: [],
+  providers: [RecentActivityService, InputServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -4,7 +4,7 @@
 .recent-activity__table {
   font-size: 0.85rem;
   text-align: center;
-  background-color: white;
+  /* background-color: white; */
   border-collapse: collapse;
   margin: 0 auto;
 }
@@ -37,15 +37,16 @@ tr td:first-child {
   color: rgb(134, 134, 134);
 }
 .recent-activity__td:nth-child(3) p {
-  width: auto;
 }
 .recent-activity__p--yellow {
   background-color: rgba(234, 243, 106, 0.5);
   box-shadow: 0px 0px 10px 2px rgb(234, 243, 106);
+  color: #036672;
 }
 .recent-activity__p--green {
   background-color: rgba(154, 248, 125, 0.753);
   box-shadow: 0px 0px 10px 2px rgb(154, 248, 125);
+  color: #036672;
 }
 .recent-activity__td:nth-child(4) {
   color: rgb(134, 134, 134);
