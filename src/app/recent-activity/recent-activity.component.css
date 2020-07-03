@@ -23,12 +23,26 @@ td {
 tr th:first-child,
 tr td:first-child {
   width: 10em;
-  /* background: salmon; */
-  /* font-weight: normal; */
 }
 .recent-activity__th {
   color: rgb(134, 134, 134);
   font-weight: normal;
+  cursor: pointer;
+}
+.recent-activity__div {
+  display: inline-block;
+}
+.recent-activity__svg {
+  width: 15px;
+  height: 15px;
+  fill: rgb(134, 134, 134);
+}
+.recent-activity__svg--color {
+  fill: black;
+}
+.recent-activity__svg--active-color {
+  fill: black;
+  transform: rotate(180deg);
 }
 .recent-activity__td:nth-child(1) {
   color: rgb(134, 134, 134);
@@ -50,4 +64,19 @@ tr td:first-child {
 }
 .recent-activity__td:nth-child(4) {
   color: rgb(134, 134, 134);
+}
+@media (min-width: 500px) {
+  .recent-activity__table {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .recent-activity__table {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .recent-activity__table {
+    width: 100%;
+  }
 }

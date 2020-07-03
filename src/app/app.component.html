@@ -10,7 +10,7 @@
   <app-menu (eventA)="selected($event)" class="menu" [ngClass]="status ? 'menu--is-active' : ''"></app-menu>
   <div class="main"><label class="main__label label" for=""><img class="label__img" src="../assets/images/search.png"
         alt=""><input class="label__input" (input)="onKey($event)" placeholder="Search transaction"></label>
-    <app-person></app-person>
+    <app-person class="app-section"></app-person>
     <div class="active-page">
       <router-outlet></router-outlet>
     </div>

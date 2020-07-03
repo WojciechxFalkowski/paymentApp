@@ -12,7 +12,7 @@
   height: 52px;
   display: inline-block;
   border-radius: 50%;
-  padding-right: 2vw;
+  margin-right: 2vw;
 }
 .person {
 }
@@ -24,7 +24,7 @@
 }
 .main__button {
   padding: 5px 10px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
@@ -34,8 +34,26 @@
   background-color: white;
   border-color: rgb(221, 221, 221);
 }
+.add-money:hover {
+  color: white;
+  background-color: #036672;
+  border-color: #036672;
+  outline: 1px solid #036672;
+}
 .send-money {
   background-color: #036672;
   color: white;
   border-color: #036672;
+}
+@media (min-width: 1024px) {
+  .app-person {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main__buttons {
+    align-self: center;
+  }
+  .add-money {
+    margin-right: 1vw;
+  }
 }

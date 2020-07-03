@@ -3,10 +3,45 @@
   <h4 class="recent-activity__h4">Recent activity ({{transactions.length}})</h4>
   <table class="recent-activity__table">
     <tr class="recent-activity__tr">
-      <th class="recent-activity__th">{{"Transaction"|uppercase}}</th>
-      <th class="recent-activity__th">{{"Amount"|uppercase}}</th>
-      <th class="recent-activity__th">{{"Status"|uppercase}}</th>
-      <th class="recent-activity__th">{{"Date"|uppercase}}</th>
+      <th #box class="recent-activity__th" (click)="onClickTransaction('Transaction')">{{"Transaction"|uppercase}}
+        <div class="recent-activity__div"><svg
+            [ngClass]="states.transaction!==0 ?  states.transaction%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
+            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
+
+        </div>
+      </th>
+      <th class="recent-activity__th" (click)="onClickTransaction('Amount')">{{"Amount"|uppercase}} <div
+          class="recent-activity__div"><svg
+            [ngClass]="states.amount!==0 ?  states.amount%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
+            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path [ngClass]="status ? 'recent-activity__path--active' : ''"
+              d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
+
+        </div>
+      </th>
+      <th class="recent-activity__th" (click)="onClickTransaction('Status')">{{"Status"|uppercase}} <div
+          class="recent-activity__div"><svg
+            [ngClass]="states.status!==0 ?  states.status%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
+            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path [ngClass]="status ? 'recent-activity__path--active' : ''"
+              d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
+
+        </div>
+      </th>
+      <th class="recent-activity__th" (click)="onClickTransaction('Date')">{{"Date"|uppercase}} <div
+          class="recent-activity__div"><svg
+            [ngClass]="states.date!==0 ?  states.date%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
+            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path [ngClass]="status ? 'recent-activity__path--active' : ''"
+              d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
+
+        </div>
+      </th>
     </tr>
     <tr class="recent-activity__tr" *ngFor="let transtaction of transactions">
       <td class="recent-activity__td">{{transtaction.transaction}}</td>

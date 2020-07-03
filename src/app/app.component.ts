@@ -21,10 +21,6 @@ export class AppComponent {
   ) {}
   ngOnInit(): void {
     this.transactions = this.recentActivityService.getTransactions();
-    // this.inputService.getValue().subscribe((transactions) => {
-    //   console.log('Tutaj powinno coś być ', transactions);
-    //   this.transactions = transactions;
-    // });
     this.inputService.addValue(this.recentActivityService.getTransactions());
   }
   //** show/close menu, change icon of hamburger */
@@ -39,12 +35,7 @@ export class AppComponent {
 
   onKey(event: any) {
     this.newTransactions = [];
-    // without type info
     this.values = event.target.value;
-    // this.inputService.addValue(this.values);
-    // this.inputService.getValue().subscribe((inputValue) => {
-    //   console.log('Wartość serwisu', inputValue);
-    // });
     this.transactions.map((transaction) => {
       if (
         transaction.transaction
@@ -54,7 +45,6 @@ export class AppComponent {
         this.newTransactions.push(transaction);
       }
     });
-    // console.log(this.newTransactions);
     this.inputService.addValue(this.newTransactions);
   }
 }

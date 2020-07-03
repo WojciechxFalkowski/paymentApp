@@ -4,8 +4,9 @@
 }
 .overview__title {
   margin-block-start: 0.7em;
-  margin-block-end: 0;
+  margin-block-end: 0.7em;
   text-align: center;
+  cursor: pointer;
 }
 .title__img {
   width: 10px;
@@ -17,9 +18,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  /* width: 45%; */
   background-color: white;
-  padding: 0 15vw 1vh 15vw;
+  /* margin: 0 15vw 1vh 15vw; */
+  padding: 2vh 10vw;
   margin: 1vh 0;
   border-radius: 5px;
 }
@@ -42,6 +44,7 @@
 .card__img {
   width: 22px;
   height: 22px;
+  padding-right: 2vw;
 }
 .card__money {
   font-weight: bold;
@@ -49,4 +52,39 @@
 .card__a {
   color: #036672;
   text-decoration: none;
+}
+@media (min-width: 500px) {
+  .overview {
+  }
+  .overview__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card {
+    padding: 2vh 2vw;
+    margin: 0px 1vw 1vh 0vw;
+  }
+}
+@media (min-width: 768px) {
+  .overview {
+    font-size: 1rem;
+  }
+  .card {
+    margin: 0px 0 1vh 0;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    padding: 2vh 2vw;
+    margin: 0px 1vw 1vh 1vw;
+  }
+  .overview__block {
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    /* padding: 2vh 5vw; */
+  }
 }
