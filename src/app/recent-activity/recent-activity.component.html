@@ -45,7 +45,7 @@
     </tr>
     <tr class="recent-activity__tr" *ngFor="let transtaction of transactions">
       <td class="recent-activity__td">{{transtaction.transaction}}</td>
-      <td class="recent-activity__td">{{transtaction.amount}} <span>USD</span></td>
+      <td class="recent-activity__td">{{transtaction.amount | currency}} <span>USD</span></td>
       <td class="recent-activity__td">
         <p
           [ngClass]="transtaction.status=='Success'? 'recent-activity__p--green' : transtaction.status=='Processing'?'recent-activity__p--yellow':''">

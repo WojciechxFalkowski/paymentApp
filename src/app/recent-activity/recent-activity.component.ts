@@ -31,8 +31,6 @@ export class RecentActivityComponent implements OnInit, DoCheck {
     nameTransaction = nameTransaction.toLowerCase();
     this.flag = this.flag.toLowerCase();
     if (this.flag === nameTransaction) {
-      // console.log('Sa równe');
-      // console.log(this.flag, nameTransaction);
       this.transactions.reverse();
     } else {
       this.states = {
@@ -42,15 +40,8 @@ export class RecentActivityComponent implements OnInit, DoCheck {
         date: 0,
       };
       this.status = !this.status;
-      // console.log('Nie sa równe');
-      // console.log(this.flag, nameTransaction);
       this.flag = nameTransaction;
-
-      // this.status = !this.status;
-      // if (!this.status) {
-      //   this.transactions.reverse();
-      // }
-
+      /**SORT METHOD */
       for (let j = 0; j < this.transactions.length - 1; j++) {
         for (let i = 0; i < this.transactions.length - 1; i++) {
           if (
@@ -66,25 +57,5 @@ export class RecentActivityComponent implements OnInit, DoCheck {
       }
     }
     this.states[nameTransaction]++;
-    console.log(this.states);
-
-    // let a = false;
-    // for (let j = 0; j < this.transactions.length - 1; j++) {
-    //   if (
-    //     this.transactions[j][nameTransaction] >=
-    //     this.transactions[j + 1][nameTransaction]
-    //   ) {
-    //     a = true;
-    //   } else {
-    //     a = false;
-    //     break;
-    //   }
-    // }
-    // if (a)
-    //   console.log(
-    //     `Wartości dla pól ${nameTransaction} sa posortowane malejąco`
-    //   );
-    // else
-    //   console.log(`Wartości dla pól ${nameTransaction} są posortowane rosnąco`);
   }
 }
