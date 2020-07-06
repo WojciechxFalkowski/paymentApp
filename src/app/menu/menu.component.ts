@@ -13,47 +13,47 @@ export class MenuComponent implements OnInit {
     {
       name: 'Home',
       url: '/',
-      icon: './../../assets/images/menu-icons/recipents.png',
+      icon: 'assets/images/menu-icons/recipents.png',
     },
     {
       name: 'History',
       url: '/history',
-      icon: './../../assets/images/menu-icons/history.png',
+      icon: 'assets/images/menu-icons/history.png',
     },
     {
       name: 'Balances',
       url: '/balances',
-      icon: './../../assets/images/menu-icons/balances.png',
+      icon: 'assets/images/menu-icons/balances.png',
     },
     {
       name: 'Cards',
       url: '/cards',
-      icon: './../../assets/images/menu-icons/cards.png',
+      icon: 'assets/images/menu-icons/cards.png',
     },
     {
       name: 'Recipents',
       url: '/recipents',
-      icon: './../../assets/images/menu-icons/recipents.png',
+      icon: 'assets/images/menu-icons/recipents.png',
     },
     {
       name: 'Raports',
       url: '/raports',
-      icon: './../../assets/images/menu-icons/raports.png',
+      icon: 'assets/images/menu-icons/raports.png',
     },
     {
       name: 'Settings',
       url: '/settings',
-      icon: './../../assets/images/menu-icons/settings.png',
+      icon: 'assets/images/menu-icons/settings.png',
     },
     {
       name: 'Help',
       url: '/help',
-      icon: './../../assets/images/menu-icons/help.png',
+      icon: 'assets/images/menu-icons/help.png',
     },
     {
       name: 'Privacy',
       url: '/privacy',
-      icon: './../../assets/images/menu-icons/privacy.png',
+      icon: 'assets/images/menu-icons/privacy.png',
     },
   ];
 
