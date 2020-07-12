@@ -2,7 +2,7 @@
   text-align: center;
 }
 .recent-activity__table {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-align: center;
   /* background-color: white; */
   border-collapse: collapse;
@@ -44,13 +44,17 @@ tr td:first-child {
   fill: black;
   transform: rotate(180deg);
 }
+.recent-activity__td {
+}
 .recent-activity__td:nth-child(1) {
+  padding-left: 1vw;
   color: rgb(134, 134, 134);
 }
 .recent-activity__td:nth-child(2) span {
   color: rgb(134, 134, 134);
 }
-.recent-activity__td:nth-child(3) p {
+.recent-activity__td:nth-child(4) {
+  padding-right: 1vw;
 }
 .recent-activity__p--yellow {
   background-color: rgba(234, 243, 106, 0.5);

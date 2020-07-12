@@ -3,6 +3,7 @@
 
 .menu__ul {
   display: flex;
+  margin-block-start: unset;
   /* height: 70vh; */
   flex-direction: column;
   padding-inline-start: 0;
@@ -44,6 +45,12 @@
   transform: translateY(20%);
   padding-right: 5px;
 }
+@media (orientation: landscape) and (max-height: 500px) {
+  .menu__li {
+    padding: 0.5vh 5vw;
+    margin: 0px auto;
+  }
+}
 @media (min-width: 500px) {
   .menu__ul {
     margin-block-start: unset;
@@ -54,6 +61,9 @@
   }
 }
 @media (min-width: 768px) {
+  .menu__ul {
+    /* position: fixed; */
+  }
   .menu__li {
   }
 }
