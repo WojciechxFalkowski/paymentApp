@@ -1,8 +1,9 @@
 <div class="menu">
   <img class="logo" src="assets/images/logo2.png" alt="">
   <ul class="menu__ul">
+
     <li class="menu__li" *ngFor="let item of menu" routerLink="{{item.url}}" (click)="select(item)">
-      <p class="menu__p"><img class="menu__icon" src={{item.icon}} alt="">{{item.name}}</p>
+      <p class="menu__p"><i class='material-icons menu__icon'>{{item.icon}}</i>{{item.name}}</p>
     </li>
   </ul>
 </div>

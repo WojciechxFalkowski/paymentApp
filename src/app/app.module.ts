@@ -8,10 +8,10 @@ import { OverviewComponent } from './overview/overview.component';
 import { RecentActivityComponent } from './recent-activity/recent-activity.component';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
-import { HistoryComponent } from './history/history.component';
 import { InputServiceService } from './services/input-service.service';
 import { RecentActivityService } from './services/recent-activity.service';
-
+import { HistoryComponent } from './history/history.component';
+import { TransactionComponent } from './history/transaction/transaction.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +19,8 @@ import { RecentActivityService } from './services/recent-activity.service';
     OverviewComponent,
     RecentActivityComponent,
     MenuComponent,
+    HistoryComponent,
+    TransactionComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,13 +29,14 @@ import { RecentActivityService } from './services/recent-activity.service';
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: RecentActivityComponent },
       { path: 'history', component: HistoryComponent },
-      { path: 'balances', component: HistoryComponent },
-      { path: 'cards', component: HistoryComponent },
-      { path: 'recipents', component: HistoryComponent },
-      { path: 'raports', component: HistoryComponent },
-      { path: 'settings', component: HistoryComponent },
-      { path: 'help', component: HistoryComponent },
-      { path: 'privacy', component: HistoryComponent },
+      { path: 'history/:id', component: TransactionComponent },
+      { path: 'balances', component: RecentActivityComponent },
+      { path: 'cards', component: RecentActivityComponent },
+      { path: 'recipents', component: RecentActivityComponent },
+      { path: 'raports', component: RecentActivityComponent },
+      { path: 'settings', component: RecentActivityComponent },
+      { path: 'help', component: RecentActivityComponent },
+      { path: 'privacy', component: RecentActivityComponent },
     ]),
   ],
   providers: [RecentActivityService, InputServiceService],

@@ -32,16 +32,15 @@ tr td:first-child {
 .recent-activity__div {
   display: inline-block;
 }
-.recent-activity__svg {
-  width: 15px;
-  height: 15px;
+.recent-activity__span {
+  font-size: 20px;
   fill: rgb(134, 134, 134);
 }
-.recent-activity__svg--color {
-  fill: black;
+.recent-activity__span--color {
+  color: black;
 }
-.recent-activity__svg--active-color {
-  fill: black;
+.recent-activity__span--active-color {
+  color: black;
   transform: rotate(180deg);
 }
 .recent-activity__td {

@@ -1,4 +1,4 @@
-import { Component, OnInit, DoCheck } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Transaction } from './../models/transaction';
 import { InputServiceService } from './../services/input-service.service';
 @Component({
@@ -7,7 +7,7 @@ import { InputServiceService } from './../services/input-service.service';
   styleUrls: ['./recent-activity.component.css'],
   providers: [],
 })
-export class RecentActivityComponent implements OnInit, DoCheck {
+export class RecentActivityComponent implements OnInit {
   transactions: Array<Transaction> = [];
   sortTransactions: Array<Transaction> = [];
   status: boolean = false;
@@ -26,7 +26,7 @@ export class RecentActivityComponent implements OnInit, DoCheck {
   }
 
   ngOnInit(): void {}
-  ngDoCheck() {}
+
   onClickTransaction(nameTransaction) {
     nameTransaction = nameTransaction.toLowerCase();
     this.flag = this.flag.toLowerCase();

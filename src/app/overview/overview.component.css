@@ -21,7 +21,7 @@
   width: 170px;
   background-color: white;
   /* margin: 0 15vw 1vh 15vw; */
-  padding: 2vh 15vw;
+  padding: 1vh 15vw;
   margin: 1vh 0;
   border-radius: 5px;
 }
@@ -63,9 +63,12 @@
     justify-content: space-around;
   }
   .card {
-    padding: 2vh 2vw;
-    margin: 0px 1vw 1vh 0vw;
+    padding: 1vh 2vw;
+    margin: 0px 1vw 1vh 1vw;
     /* width: 140px; */
+  }
+  .card__img {
+    padding-right: 2vw;
   }
 }
 @media (min-width: 768px) {
@@ -73,12 +76,11 @@
     /* font-size: 1rem; */
   }
   .card {
-    padding: 1vh 2vw;
     /* margin: 0px 0 1vh 0; */
     width: 150px;
   }
   .card__img {
-    padding-right: 2vw;
+    padding-right: 1vw;
   }
 }
 @media (orientation: portrait) and (min-width: 768px) {

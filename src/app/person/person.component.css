@@ -19,6 +19,9 @@
 .name {
   font-weight: bold;
 }
+.person__i {
+  transform: translateY(5px);
+}
 .main__buttons {
   text-align: right;
 }

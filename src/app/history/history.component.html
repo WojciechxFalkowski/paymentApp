@@ -1,1 +1,54 @@
-<p>history works!</p>
+<div class="recent-activity">
+  <h4 class="recent-activity__h4">Recent activity ({{transactions.length}})</h4>
+  <table class="recent-activity__table">
+    <tr class="recent-activity__tr">
+      <th #box class="recent-activity__th" (click)="onClickTransaction('Transaction')">{{"Transaction"|uppercase}}
+        <div class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.transaction!==0 ?  states.transaction%2==0?'recent-activity__span--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
+        </div>
+      </th>
+      <th class="recent-activity__th" (click)="onClickTransaction('Amount')">{{"Amount"|uppercase}} <div
+          class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.amount!==0 ?  states.amount%2==0?'recent-activity__span--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
+
+
+        </div>
+      </th>
+      <th class="recent-activity__th" (click)="onClickTransaction('Status')">{{"Status"|uppercase}} <div
+          class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.status!==0 ?  states.status%2==0?'recent-activity__svg--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
+
+
+        </div>
+      </th>
+      <th class="recent-activity__th" (click)="onClickTransaction('Date')">{{"Date"|uppercase}} <div
+          class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.date!==0 ?  states.date%2==0?'recent-activity__svg--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
+
+
+        </div>
+      </th>
+    </tr>
+    <tr class="recent-activity__tr" *ngFor="let transtaction of transactions">
+      <td class="recent-activity__td">
+
+
+
+        <p class="" [routerLink]="['/history',transtaction.account_id]" (click)="select(transtaction)">
+          {{transtaction.transaction}}
+        </p>
+
+
+
+      </td>
+      <td class="recent-activity__td">{{transtaction.amount | currency}} <span>USD</span></td>
+      <td class="recent-activity__td">
+        <p
+          [ngClass]="transtaction.status=='Success'? 'recent-activity__p--green' : transtaction.status=='Processing'?'recent-activity__p--yellow':''">
+          {{transtaction.status}}</p>
+      </td>
+      <td class="recent-activity__td">{{transtaction.date|date:'MMM dd, yyyy'}}</td>
+
+    </tr>
+  </table>
+</div>

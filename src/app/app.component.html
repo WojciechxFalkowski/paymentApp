@@ -1,5 +1,4 @@
 <div class="container">
-  <!-- tutaj poniżej dodać klase is-active -->
   <div class="mobile-menu">
     <div class="hamburger hamburger--arrow" (click)="hamburgerActive() " [ngClass]="status ? 'is-active' : ''">
       <div class="hamburger-box">
@@ -8,8 +7,9 @@
     </div>
   </div>
   <app-menu (eventA)="selected($event)" class="menu" [ngClass]="status ? 'menu--is-active' : ''"></app-menu>
-  <div class="main"><label class="main__label label" for=""><img class="label__img" src="../assets/images/search.png"
-        alt=""><input class="label__input" (input)="onKey($event)" placeholder="Search transaction"></label>
+  <div class="main"><label class="main__label label" for="label__input"><i
+        class='material-icons label__img'>search</i><input class="label__input" id="label__input"
+        (input)="onKey($event)" placeholder="Search transaction"></label>
     <app-person class="app-section"></app-person>
     <div class="active-page">
       <router-outlet></router-outlet>

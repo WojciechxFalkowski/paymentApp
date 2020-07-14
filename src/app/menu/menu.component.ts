@@ -13,47 +13,47 @@ export class MenuComponent implements OnInit {
     {
       name: 'Home',
       url: '/',
-      icon: 'assets/images/menu-icons/recipents.png',
+      icon: 'home',
     },
     {
       name: 'History',
       url: '/history',
-      icon: 'assets/images/menu-icons/history.png',
+      icon: 'history',
     },
     {
       name: 'Balances',
       url: '/balances',
-      icon: 'assets/images/menu-icons/balances.png',
+      icon: 'linear_scale',
     },
     {
       name: 'Cards',
       url: '/cards',
-      icon: 'assets/images/menu-icons/cards.png',
+      icon: 'credit_card',
     },
     {
-      name: 'Recipents',
+      name: 'Recipients',
       url: '/recipents',
-      icon: 'assets/images/menu-icons/recipents.png',
+      icon: 'people',
     },
     {
       name: 'Raports',
       url: '/raports',
-      icon: 'assets/images/menu-icons/raports.png',
+      icon: 'assessment',
     },
     {
       name: 'Settings',
       url: '/settings',
-      icon: 'assets/images/menu-icons/settings.png',
+      icon: 'settings',
     },
     {
       name: 'Help',
       url: '/help',
-      icon: 'assets/images/menu-icons/help.png',
+      icon: 'help_outline',
     },
     {
       name: 'Privacy',
       url: '/privacy',
-      icon: 'assets/images/menu-icons/privacy.png',
+      icon: 'privacy_tip',
     },
   ];
 

@@ -1,9 +1,148 @@
 import { Injectable } from '@angular/core';
-
+import { Transaction } from './../models/transaction';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
-
-  constructor() { }
+  constructor() {}
+  transactions: Array<Transaction> = [
+    {
+      account_id: '75c8086d8bfb4c68a7c7c0270fc1cef7',
+      ref_id: '',
+      transaction: 'Payment from Molly Sanders',
+      type_transaction: '',
+      amount: 520000,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2020, 4, 5),
+    },
+    {
+      account_id: 'dc0c6c0442b9479480d88d33dff444ce',
+      ref_id: '',
+      transaction: 'Payment to Doug Mann',
+      type_transaction: '',
+      amount: 19500,
+      iso_currency_code: 'USD',
+      status: 'Processing',
+      country: '',
+      authorized_date: '',
+      date: new Date(2020, 3, 28),
+    },
+    {
+      account_id: 'bdbb3e56c8d44f5f96741efc5edfb107',
+      ref_id: '',
+      transaction: 'Payment to Erica Frost',
+      type_transaction: '',
+      amount: 8750,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2020, 3, 9),
+    },
+    {
+      account_id: '32896dc47ccf4f2aa647175da0c69336',
+      ref_id: '',
+      transaction: 'Added from account ****5555',
+      type_transaction: '',
+      amount: 300,
+      iso_currency_code: 'USD',
+      status: 'Failed',
+      country: '',
+      authorized_date: '',
+      date: new Date(2020, 2, 15),
+    },
+    {
+      account_id: 'd681203df9034dab97c2472c7622e3ba',
+      ref_id: '',
+      transaction: 'Payment from Hank Douglas',
+      type_transaction: '',
+      amount: 20000,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2020, 1, 19),
+    },
+    {
+      account_id: '59664f2fc92c471d881698e2f0920df6',
+      ref_id: '',
+      transaction: 'Payment from Hank Chase',
+      type_transaction: '',
+      amount: 7250,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2020, 1, 5),
+    },
+    {
+      account_id: '5a6e0bae3c5c4cb997fe6510bf375c05',
+      ref_id: '',
+      transaction: 'Payment to Molly Sanders',
+      type_transaction: '',
+      amount: 475,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2020, 0, 26),
+    },
+    {
+      account_id: '1e11ac6baf9b4f3ba2e157530c6e5136',
+      ref_id: '',
+      transaction: 'Payment to Erica Frost',
+      type_transaction: '',
+      amount: 7250,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2019, 11, 4),
+    },
+    {
+      account_id: '2e5c3e6ae9b34cfb971ac14e422aa2cb',
+      ref_id: '',
+      transaction: 'Payment to Doug Mann',
+      type_transaction: '',
+      amount: 300,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2019, 8, 28),
+    },
+    {
+      account_id: '52cb68ee01c64d7b90175052f34be569',
+      ref_id: '',
+      transaction: 'Payment from Hank Chase',
+      type_transaction: '',
+      amount: 200,
+      iso_currency_code: 'USD',
+      status: 'Failed',
+      country: '',
+      authorized_date: '',
+      date: new Date(2019, 7, 20),
+    },
+    {
+      account_id: '5864bbfde2dc495ab27200f8f94b1b23',
+      ref_id: '',
+      transaction: 'Added from account ****5555',
+      type_transaction: '',
+      amount: 100,
+      iso_currency_code: 'USD',
+      status: 'Success',
+      country: '',
+      authorized_date: '',
+      date: new Date(2019, 5, 15),
+    },
+  ];
+  getTransactions() {
+    return this.transactions;
+  }
+  getLastTransactions(amount: number) {
+    return this.transactions.slice(0, amount);
+  }
 }

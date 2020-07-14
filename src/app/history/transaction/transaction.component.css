@@ -1,0 +1,16 @@
+.transaction {
+  padding-left: 1vw;
+}
+.transaction__arrow {
+  position: absolute;
+  font-size: 2rem;
+}
+.transaction__p {
+  text-align: center;
+  margin: 3vh 0;
+  color: rgb(134, 134, 134);
+}
+.transaction__span {
+  display: block;
+  color: black;
+}

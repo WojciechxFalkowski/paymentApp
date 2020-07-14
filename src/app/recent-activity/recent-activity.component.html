@@ -4,41 +4,28 @@
   <table class="recent-activity__table">
     <tr class="recent-activity__tr">
       <th #box class="recent-activity__th" (click)="onClickTransaction('Transaction')">{{"Transaction"|uppercase}}
-        <div class="recent-activity__div"><svg
-            [ngClass]="states.transaction!==0 ?  states.transaction%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
-            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
-
+        <div class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.transaction!==0 ?  states.transaction%2==0?'recent-activity__span--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
         </div>
       </th>
       <th class="recent-activity__th" (click)="onClickTransaction('Amount')">{{"Amount"|uppercase}} <div
-          class="recent-activity__div"><svg
-            [ngClass]="states.amount!==0 ?  states.amount%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
-            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path [ngClass]="status ? 'recent-activity__path--active' : ''"
-              d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
+          class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.amount!==0 ?  states.amount%2==0?'recent-activity__span--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
+
 
         </div>
       </th>
       <th class="recent-activity__th" (click)="onClickTransaction('Status')">{{"Status"|uppercase}} <div
-          class="recent-activity__div"><svg
-            [ngClass]="states.status!==0 ?  states.status%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
-            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path [ngClass]="status ? 'recent-activity__path--active' : ''"
-              d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
+          class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.status!==0 ?  states.status%2==0?'recent-activity__svg--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
+
 
         </div>
       </th>
       <th class="recent-activity__th" (click)="onClickTransaction('Date')">{{"Date"|uppercase}} <div
-          class="recent-activity__div"><svg
-            [ngClass]="states.date!==0 ?  states.date%2==0?'recent-activity__svg--color' : 'recent-activity__svg--active-color' :''"
-            class="recent-activity__svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path [ngClass]="status ? 'recent-activity__path--active' : ''"
-              d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
+          class="recent-activity__div">
+          <span class="material-icons recent-activity__span" [ngClass]="states.date!==0 ?  states.date%2==0?'recent-activity__svg--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
+
 
         </div>
       </th>
