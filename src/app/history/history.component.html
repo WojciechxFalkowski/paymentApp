@@ -1,5 +1,11 @@
 <div class="recent-activity">
-  <h4 class="recent-activity__h4">Recent activity ({{transactions.length}})</h4>
+
+
+  <div class="lab"><label class="main__label label" for="label__input"><i
+        class='material-icons label__img'>search</i><input class="label__input" id="label__input"
+        (input)="onKey($event)" placeholder="Search transaction"></label></div>
+  <!-- <h4 class="recent-activity__h4">Recent activity ({{newTransactions.length}})
+  </h4> -->
   <table class="recent-activity__table">
     <tr class="recent-activity__tr">
       <th #box class="recent-activity__th" (click)="onClickTransaction('Transaction')">{{"Transaction"|uppercase}}
@@ -29,12 +35,13 @@
         </div>
       </th>
     </tr>
-    <tr class="recent-activity__tr" *ngFor="let transtaction of transactions">
+    <tr class="recent-activity__tr" *ngFor="let transtaction of newTransactions">
       <td class="recent-activity__td">
 
 
 
-        <p class="" [routerLink]="['/history',transtaction.account_id]" (click)="select(transtaction)">
+        <p class="recent-activity__p" [routerLink]="['/history',transtaction.account_id]"
+          (click)="select(transtaction)">
           {{transtaction.transaction}}
         </p>
 

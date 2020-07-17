@@ -19,7 +19,7 @@ export class TransactionComponent implements OnInit {
     iso_currency_code: '',
     status: '',
     country: '',
-    authorized_date: '',
+    authorized_date: new Date(),
     date: new Date(),
   };
 
@@ -33,11 +33,10 @@ export class TransactionComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-    console.log(this.id);
+
     this.transaction = this.transactions.filter(
       (transaction) => transaction.account_id == this.id
     )[0];
-    console.log(this.transaction);
   }
   clickArrow() {
     this.router.navigate(['/history']);

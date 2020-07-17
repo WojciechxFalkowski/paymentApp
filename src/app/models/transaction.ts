@@ -7,6 +7,6 @@ export interface Transaction {
   iso_currency_code: string;
   status: string;
   country: string;
-  authorized_date: string;
+  authorized_date: Date;
   date: Date;
 }

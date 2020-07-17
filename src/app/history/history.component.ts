@@ -18,8 +18,11 @@ export class HistoryComponent implements OnInit {
     status: 0,
     date: 0,
   };
+  newTransactions: Array<Transaction> = [];
+  values = '';
   constructor(private dataService: DataService) {
     this.transactions = dataService.getTransactions();
+    this.newTransactions = dataService.getTransactions();
   }
 
   ngOnInit(): void {}
@@ -55,7 +58,18 @@ export class HistoryComponent implements OnInit {
     }
     this.states[nameTransaction]++;
   }
-  select(transaction) {
-    console.log(transaction);
+  select(transaction) {}
+  onKey(event: any) {
+    this.newTransactions = [];
+    this.values = event.target.value;
+    this.transactions.map((transaction) => {
+      if (
+        transaction.transaction
+          .toLowerCase()
+          .includes(this.values.toLowerCase())
+      ) {
+        this.newTransactions.push(transaction);
+      }
+    });
   }
 }

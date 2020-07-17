@@ -8,7 +8,9 @@
   border-collapse: collapse;
   margin: 0 auto;
 }
-
+.recent-activity__th {
+  font-size: 0.7rem;
+}
 tr:first-child {
   border-bottom: 1px solid rgb(134, 134, 134);
 }
@@ -33,7 +35,7 @@ tr td:first-child {
   display: inline-block;
 }
 .recent-activity__span {
-  font-size: 20px;
+  font-size: 10px;
   fill: rgb(134, 134, 134);
 }
 .recent-activity__span--color {
@@ -72,10 +74,22 @@ tr td:first-child {
   .recent-activity__table {
     width: 100%;
   }
+  .recent-activity__th {
+    font-size: 0.8rem;
+  }
+  .recent-activity__span {
+    font-size: 15px;
+  }
 }
 @media (min-width: 768px) {
   .recent-activity__table {
     font-size: 1rem;
+  }
+  .recent-activity__th {
+    font-size: 1rem;
+  }
+  .recent-activity__span {
+    font-size: 20px;
   }
 }
 @media (min-width: 1024px) {

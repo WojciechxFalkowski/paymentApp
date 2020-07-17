@@ -7,7 +7,7 @@ import { DataService } from './data.service';
 export class RecentActivityService {
   private transactions: Array<Transaction> = [];
   constructor(private dataService: DataService) {
-    this.transactions = dataService.getLastTransactions(6);
+    this.transactions = dataService.getLastTransactions(5);
   }
   getTransactions() {
     return this.transactions;

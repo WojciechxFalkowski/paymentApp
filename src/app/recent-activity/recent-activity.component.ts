@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Transaction } from './../models/transaction';
-import { InputServiceService } from './../services/input-service.service';
+// import { InputServiceService } from './../services/input-service.service';
+import { DataService } from './../services/data.service';
 @Component({
   selector: 'app-recent-activity',
   templateUrl: './recent-activity.component.html',
@@ -19,10 +20,11 @@ export class RecentActivityComponent implements OnInit {
     status: 0,
     date: 0,
   };
-  constructor(private inputService: InputServiceService) {
-    this.inputService.getValue().subscribe((transactions) => {
-      this.transactions = transactions;
-    });
+  constructor(private dataService: DataService) {
+    // this.inputService.getValue().subscribe((transactions) => {
+    //   this.transactions = transactions;
+    // });
+    this.transactions = dataService.getLastTransactions(5);
   }
 
   ngOnInit(): void {}

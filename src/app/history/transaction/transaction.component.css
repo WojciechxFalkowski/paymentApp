@@ -4,6 +4,7 @@
 .transaction__arrow {
   position: absolute;
   font-size: 2rem;
+  cursor: pointer;
 }
 .transaction__p {
   text-align: center;

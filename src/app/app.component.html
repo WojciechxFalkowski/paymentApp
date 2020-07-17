@@ -7,9 +7,7 @@
     </div>
   </div>
   <app-menu (eventA)="selected($event)" class="menu" [ngClass]="status ? 'menu--is-active' : ''"></app-menu>
-  <div class="main"><label class="main__label label" for="label__input"><i
-        class='material-icons label__img'>search</i><input class="label__input" id="label__input"
-        (input)="onKey($event)" placeholder="Search transaction"></label>
+  <div class="main">
     <app-person class="app-section"></app-person>
     <div class="active-page">
       <router-outlet></router-outlet>
