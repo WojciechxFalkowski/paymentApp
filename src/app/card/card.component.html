@@ -1,0 +1,12 @@
+<div class="card" [style.backgroundImage]="propCard.url">
+  <!-- <img src="" alt="" class="card__logo"> -->
+  <p class="card__name">{{propCard.name}} </p>
+  <img src="" alt="" class="card__chip">
+  <span class="material-icons md-light  card__contactless-payment">
+    contactless
+    </span>
+  <p class="card__number">{{propCard.number}}</p>
+  <p class="card__expiry-date">{{propCard.expiryDate|date:'yy/MM'}}</p>
+  <p class="card__holder-details">{{propCard.holderDetails}}</p>
+  <img class="card__organization-payment-logo">
+</div>

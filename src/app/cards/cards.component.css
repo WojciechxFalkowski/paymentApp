@@ -1,0 +1,8 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  /* align-content: space-around; */
+  flex-wrap: wrap;
+  /* height: 100%; */
+  /* background-image: url("./../../assets/images/cards/ship-640x438.jpg"); */
+}

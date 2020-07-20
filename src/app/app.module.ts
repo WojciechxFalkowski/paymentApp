@@ -12,6 +12,8 @@ import { InputServiceService } from './services/input-service.service';
 import { RecentActivityService } from './services/recent-activity.service';
 import { HistoryComponent } from './history/history.component';
 import { TransactionComponent } from './history/transaction/transaction.component';
+import { CardsComponent } from './cards/cards.component';
+import { CardComponent } from './card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { TransactionComponent } from './history/transaction/transaction.componen
     MenuComponent,
     HistoryComponent,
     TransactionComponent,
+    CardsComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,7 @@ import { TransactionComponent } from './history/transaction/transaction.componen
       { path: 'history', component: HistoryComponent },
       { path: 'history/:id', component: TransactionComponent },
       { path: 'balances', component: RecentActivityComponent },
-      { path: 'cards', component: RecentActivityComponent },
+      { path: 'cards', component: CardsComponent },
       { path: 'recipents', component: RecentActivityComponent },
       { path: 'raports', component: RecentActivityComponent },
       { path: 'settings', component: RecentActivityComponent },

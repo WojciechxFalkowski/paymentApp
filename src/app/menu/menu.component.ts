@@ -20,41 +20,41 @@ export class MenuComponent implements OnInit {
       url: '/history',
       icon: 'history',
     },
-    {
-      name: 'Balances',
-      url: '/balances',
-      icon: 'linear_scale',
-    },
+    // {
+    //   name: 'Balances',
+    //   url: '/balances',
+    //   icon: 'linear_scale',
+    // },
     {
       name: 'Cards',
       url: '/cards',
       icon: 'credit_card',
     },
-    {
-      name: 'Recipients',
-      url: '/recipents',
-      icon: 'people',
-    },
-    {
-      name: 'Raports',
-      url: '/raports',
-      icon: 'assessment',
-    },
-    {
-      name: 'Settings',
-      url: '/settings',
-      icon: 'settings',
-    },
-    {
-      name: 'Help',
-      url: '/help',
-      icon: 'help_outline',
-    },
-    {
-      name: 'Privacy',
-      url: '/privacy',
-      icon: 'privacy_tip',
-    },
+    // {
+    //   name: 'Recipients',
+    //   url: '/recipents',
+    //   icon: 'people',
+    // },
+    // {
+    //   name: 'Raports',
+    //   url: '/raports',
+    //   icon: 'assessment',
+    // },
+    // {
+    //   name: 'Settings',
+    //   url: '/settings',
+    //   icon: 'settings',
+    // },
+    // {
+    //   name: 'Help',
+    //   url: '/help',
+    //   icon: 'help_outline',
+    // },
+    // {
+    //   name: 'Privacy',
+    //   url: '/privacy',
+    //   icon: 'privacy_tip',
+    // },
   ];
 
   constructor() {}
