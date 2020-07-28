@@ -14,6 +14,12 @@ import { HistoryComponent } from './history/history.component';
 import { TransactionComponent } from './history/transaction/transaction.component';
 import { CardsComponent } from './cards/cards.component';
 import { CardComponent } from './card/card.component';
+import { RecipientsComponent } from './recipients/recipients.component';
+import { ListComponent } from './recipients/list/list.component';
+import { BalancesComponent } from './balances/balances.component';
+import { WeekChartComponent } from './balances/week-chart/week-chart.component';
+import { TodayChartComponent } from './balances/today-chart/today-chart.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +31,11 @@ import { CardComponent } from './card/card.component';
     TransactionComponent,
     CardsComponent,
     CardComponent,
+    RecipientsComponent,
+    ListComponent,
+    BalancesComponent,
+    WeekChartComponent,
+    TodayChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +45,9 @@ import { CardComponent } from './card/card.component';
       { path: 'home', component: RecentActivityComponent },
       { path: 'history', component: HistoryComponent },
       { path: 'history/:id', component: TransactionComponent },
-      { path: 'balances', component: RecentActivityComponent },
+      { path: 'balances', component: BalancesComponent },
       { path: 'cards', component: CardsComponent },
-      { path: 'recipents', component: RecentActivityComponent },
+      { path: 'recipients', component: RecipientsComponent },
       { path: 'raports', component: RecentActivityComponent },
       { path: 'settings', component: RecentActivityComponent },
       { path: 'help', component: RecentActivityComponent },

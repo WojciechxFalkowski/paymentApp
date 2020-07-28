@@ -31,7 +31,7 @@ export class HistoryComponent implements OnInit {
     nameTransaction = nameTransaction.toLowerCase();
     this.flag = this.flag.toLowerCase();
     if (this.flag === nameTransaction) {
-      this.transactions.reverse();
+      this.newTransactions.reverse();
     } else {
       this.states = {
         transaction: 0,
@@ -42,21 +42,22 @@ export class HistoryComponent implements OnInit {
       this.status = !this.status;
       this.flag = nameTransaction;
       /**SORT METHOD */
-      for (let j = 0; j < this.transactions.length - 1; j++) {
-        for (let i = 0; i < this.transactions.length - 1; i++) {
+      for (let j = 0; j < this.newTransactions.length - 1; j++) {
+        for (let i = 0; i < this.newTransactions.length - 1; i++) {
           if (
-            this.transactions[i][nameTransaction] >=
-            this.transactions[i + 1][nameTransaction]
+            this.newTransactions[i][nameTransaction] >=
+            this.newTransactions[i + 1][nameTransaction]
           ) {
           } else {
-            let pom = this.transactions[i];
-            this.transactions[i] = this.transactions[i + 1];
-            this.transactions[i + 1] = pom;
+            let pom = this.newTransactions[i];
+            this.newTransactions[i] = this.newTransactions[i + 1];
+            this.newTransactions[i + 1] = pom;
           }
         }
       }
     }
     this.states[nameTransaction]++;
+    console.log('DZIALA');
   }
   select(transaction) {}
   onKey(event: any) {
@@ -71,5 +72,6 @@ export class HistoryComponent implements OnInit {
         this.newTransactions.push(transaction);
       }
     });
+    console.log('dziala');
   }
 }

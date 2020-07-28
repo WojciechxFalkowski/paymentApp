@@ -20,21 +20,21 @@ export class MenuComponent implements OnInit {
       url: '/history',
       icon: 'history',
     },
-    // {
-    //   name: 'Balances',
-    //   url: '/balances',
-    //   icon: 'linear_scale',
-    // },
+    {
+      name: 'Balances',
+      url: '/balances',
+      icon: 'linear_scale',
+    },
     {
       name: 'Cards',
       url: '/cards',
       icon: 'credit_card',
     },
-    // {
-    //   name: 'Recipients',
-    //   url: '/recipents',
-    //   icon: 'people',
-    // },
+    {
+      name: 'Recipients',
+      url: '/recipients',
+      icon: 'people',
+    },
     // {
     //   name: 'Raports',
     //   url: '/raports',

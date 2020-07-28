@@ -1,0 +1,15 @@
+<h1 class="contact-list">Contact List</h1>
+<ul class="list">
+  <li class="list__li" *ngFor="let recipient of recipientsList;index as i">
+    <p class="list__name" (click)="activeRecipient($event)" id={{i}}>{{recipient.name}} {{recipient.surname}}
+    </p>
+    <p class="list__accountNumber">{{recipient.accountNumber}}</p>
+    <div class="list__div" [ngClass]="recipient.status?'list__div--active':''">
+      <p>{{recipient.email}}</p>
+      <p>{{recipient.phoneNumber}}</p>
+      <p>{{recipient.adress}}</p>
+      <p>{{recipient.city}}</p>
+      <p>{{recipient.country}}</p>
+    </div>
+  </li>
+</ul>
