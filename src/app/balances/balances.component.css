@@ -1,7 +1,7 @@
 .balances {
-  /* width: 99%; */
-  height: 100%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 2vh auto;
+  padding-bottom: 1vh;
   background-color: white;
 }
 .balances__h1 {
@@ -17,4 +17,10 @@
   justify-content: center;
   align-items: center;
   margin: 2vh auto;
+  background-color: white;
+}
+@media (min-width: 1024px) {
+  .balances__charts {
+    max-width: 750px;
+  }
 }

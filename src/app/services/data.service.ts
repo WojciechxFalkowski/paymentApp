@@ -503,7 +503,13 @@ export class DataService {
     let dates = this.getLastDayDates();
     let hoursDates: Array<string> = [];
     for (let i = 0; i < dates.length; ++i) {
-      hoursDates.push(`${dates[i].getHours()}:${dates[i].getMinutes()}`);
+      hoursDates.push(
+        `${dates[i].getHours()}:${
+          dates[i].getMinutes() > 9
+            ? dates[i].getMinutes()
+            : '0' + dates[i].getMinutes()
+        }`
+      );
     }
     return hoursDates;
   }

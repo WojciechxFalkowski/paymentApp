@@ -30,35 +30,9 @@ export class WeekChartComponent implements OnInit, AfterViewInit {
   weekMoney;
   transaction: Array<Transaction>;
   constructor(private dataService: DataService) {
-    // this.transaction = dataService.getTransactions();
-    // console.log(dataService.getLastDayTransaction());
     this.weekMoney = dataService.getLastWeekTransactionMoney();
   }
-  ngOnInit() {
-    // let date = new Date();
-    // let todayDate = [
-    //   date.getFullYear(),
-    //   date.getMonth(),
-    //   date.getDate(),
-    //   date.getHours(),
-    //   date.getMinutes(),
-    //   date.getSeconds(),
-    // ];
-    // console.log(new Date(2020, 6, 27, 22, 36, 4));
-    // console.log(
-    //   new Date(
-    //     todayDate[0],
-    //     todayDate[1],
-    //     todayDate[2],
-    //     todayDate[3],
-    //     todayDate[4],
-    //     todayDate[5]
-    //   )
-    // );
-    // console.log(todayDate);
-    // console.log(new Date(date[0], date[1], date[2], date[3], date[4], date[5]));
-    // console.log(new Date(2020, 3, 28, 6, 10, 3));
-  }
+  ngOnInit() {}
   ngAfterViewInit(): void {
     this.canvas = this.chart.nativeElement;
     this.ctx = this.canvas.getContext('2d');
@@ -73,7 +47,6 @@ export class WeekChartComponent implements OnInit, AfterViewInit {
         ]
       );
     }
-    // console.log(labels);
     new Chart(this.ctx, {
       type: 'line',
       data: {
@@ -103,7 +76,7 @@ export class WeekChartComponent implements OnInit, AfterViewInit {
         },
         elements: {
           line: {
-            tension: 0, // disables bezier curves
+            tension: 0,
           },
         },
         scales: {

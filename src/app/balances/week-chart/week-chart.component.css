@@ -7,14 +7,5 @@
 }
 .week-chart__canvas {
   margin: 0 auto;
-}
-@media (min-width: 640px) {
-  :host {
-    /* width: 90%; */
-  }
-}
-@media (min-width: 1024px) {
-  .week-chart__canvas {
-    max-width: 900px;
-  }
+  max-height: 330px;
 }

@@ -19,7 +19,8 @@ import { ListComponent } from './recipients/list/list.component';
 import { BalancesComponent } from './balances/balances.component';
 import { WeekChartComponent } from './balances/week-chart/week-chart.component';
 import { TodayChartComponent } from './balances/today-chart/today-chart.component';
-
+import { AddContactComponent } from './recipients/list/add-contact/add-contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { TodayChartComponent } from './balances/today-chart/today-chart.componen
     BalancesComponent,
     WeekChartComponent,
     TodayChartComponent,
+    AddContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,11 +50,14 @@ import { TodayChartComponent } from './balances/today-chart/today-chart.componen
       { path: 'balances', component: BalancesComponent },
       { path: 'cards', component: CardsComponent },
       { path: 'recipients', component: RecipientsComponent },
+      { path: 'recipients/add', component: AddContactComponent },
       { path: 'raports', component: RecentActivityComponent },
       { path: 'settings', component: RecentActivityComponent },
       { path: 'help', component: RecentActivityComponent },
       { path: 'privacy', component: RecentActivityComponent },
     ]),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [RecentActivityService, InputServiceService],
   bootstrap: [AppComponent],

@@ -30,9 +30,6 @@ export class TodayChartComponent implements OnInit, AfterViewInit {
   constructor(private dataService: DataService) {
     this.todayMoney = dataService.getLastDayTransaction();
     this.todayDates = dataService.getLastDayHours();
-
-    // console.log(dataService.getLastDayDates());
-    // console.log(dataService.getLastDayHours());
   }
   ngOnInit() {}
   ngAfterViewInit(): void {
@@ -53,16 +50,6 @@ export class TodayChartComponent implements OnInit, AfterViewInit {
       type: 'line',
       data: {
         labels: this.todayDates,
-        // '0:00',
-        // '3:00',
-        // '6:00',
-        // '9:00',
-        // '12:00',
-        // '15:00',
-        // '18:00',
-        // '21:00',
-        // '24:00',
-
         datasets: [
           {
             label: 'Money',
@@ -88,7 +75,7 @@ export class TodayChartComponent implements OnInit, AfterViewInit {
         },
         elements: {
           line: {
-            tension: 0, // disables bezier curves
+            tension: 0,
           },
         },
         scales: {

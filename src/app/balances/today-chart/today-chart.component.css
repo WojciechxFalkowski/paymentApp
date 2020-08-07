@@ -7,14 +7,10 @@
 }
 .today-chart__canvas {
   margin: 0 auto;
+  max-height: 320px;
 }
 @media (min-width: 640px) {
   :host {
     /* width: 90%; */
-  }
-}
-@media (min-width: 1024px) {
-  .today-chart__canvas {
-    max-width: 900px;
   }
 }

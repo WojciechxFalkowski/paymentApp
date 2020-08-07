@@ -4,7 +4,7 @@ export interface RecipientsList {
   email: string;
   accountNumber: string;
   phoneNumber: string;
-  adress: string;
+  address: string;
   city: string;
   country: string;
   status: boolean;

@@ -1,0 +1,49 @@
+<form class="add-contact" [formGroup]="newContact" (ngSubmit)="onSubmit()">
+  <span class="material-icons add-contact__span" (click)="goBack()">keyboard_arrow_left</span>
+  <label class="add-contact__label">
+    <p>First Name:</p>
+    <div><input class="add-contact__input" placeholder="First Name" type="text" formControlName="name"></div>
+    <span *ngIf="this.newContact.controls.name.invalid && this.newContact.controls.name.touched" class="add-contact__error">Your name must be between 3 and 12 characters</span>
+  </label>
+  <label class="add-contact__label">
+    <p>Last Name:</p>
+    <div><input class="add-contact__input" placeholder="Last Name" type="text" formControlName="surname"></div>
+    <span *ngIf="this.newContact.controls.surname.invalid && this.newContact.controls.surname.touched" class="add-contact__error">Your surname must be more than 3 characters</span>
+  </label>
+  <label class="add-contact__label">
+    <p>Account Number:</p>
+    <div><input class="add-contact__input" placeholder="Account Number" type="text" formControlName="accountNumber">
+    </div>
+    <span *ngIf="this.newContact.controls.accountNumber.invalid && this.newContact.controls.accountNumber.touched" class="add-contact__error">Your account number must be a 12 digits</span>
+  </label>
+  <label class="add-contact__label">
+    <p>Email:</p>
+    <div><input class="add-contact__input" placeholder="Email" type="text" formControlName="email"></div>
+
+    <span *ngIf="this.newContact.controls.email.invalid && this.newContact.controls.email.touched" class="add-contact__error">Incorrect email </span>
+  </label>
+  <label class="add-contact__label">
+    <p>Phone number:</p>
+    <div><input class="add-contact__input" placeholder="Phone number" type="text" formControlName="phoneNumber"></div>
+    <span *ngIf="this.newContact.controls.phoneNumber.invalid && this.newContact.controls.phoneNumber.touched" class="add-contact__error">Your phone number must be a 9 digits</span>
+  </label>
+  <label class="add-contact__label">
+    <p>Address:</p>
+    <div><input class="add-contact__input" placeholder="Address" type="text" formControlName="address"></div>
+    <span *ngIf="this.newContact.controls.address.invalid && this.newContact.controls.address.touched" class="add-contact__error">Incorrect address</span>
+  </label>
+  <label class="add-contact__label">City:<br />
+    <div><input class="add-contact__input" placeholder="City" type="text" formControlName="city"></div>
+    <span *ngIf="this.newContact.controls.city.invalid && this.newContact.controls.city.touched" class="add-contact__error">Incorrect city</span>
+  </label>
+  <label class="add-contact__label">
+    <p>Country:</p>
+    <div><input class="add-contact__input" placeholder="Country" type="text" formControlName="country"></div>
+    <span *ngIf="this.newContact.controls.country.invalid && this.newContact.controls.country.touched" class="add-contact__error">Incorrect country</span>
+  </label>
+  <button class="add-contact__button" type="submit" [disabled]="!newContact.valid">Add Contact</button>
+</form>
+<div>
+  <p>{{this.newContact.controls.name.valid}}</p>
+  <p>{{this.newContact.controls.name.touched}}</p>
+</div>
