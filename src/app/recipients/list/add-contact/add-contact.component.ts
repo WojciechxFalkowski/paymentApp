@@ -55,11 +55,8 @@ export class AddContactComponent implements OnInit {
 
   ngOnInit(): void {}
   onSubmit() {
-    // TODO: Use EventEmitter with form value
-    console.warn(this.newContact.value);
     this.recipientsService.newRecipient(this.newContact.value);
-    console.log(this.newContact.controls.name.valid);
-    // this.goBack();
+    this.goBack();
   }
   goBack() {
     this.router.navigate(['/recipients']);
