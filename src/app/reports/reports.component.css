@@ -11,7 +11,7 @@
   margin: 5vh 0;
 }
 .reports__h1 {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
@@ -24,4 +24,14 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 0 0 2vh 0;
+}
+@media (min-width: 768px) {
+  .reports__h1 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .reports__h1 {
+    font-size: 1.1rem;
+  }
 }

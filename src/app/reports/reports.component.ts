@@ -22,6 +22,9 @@ export class ReportsComponent implements OnInit, AfterViewInit {
   yearsData;
   daysData;
   months;
+  screenHeight: number;
+  screenWidth: number;
+
   constructor(private dataService: DataService) {
     this.monthly = dataService.getLastYearMonthTransaction();
     this.quarterMoney = dataService.getLastYearQuarterTransactions();
@@ -29,6 +32,7 @@ export class ReportsComponent implements OnInit, AfterViewInit {
     this.daysData = dataService.getDaysTransaction();
     this.months = dataService.getLastYearMonths();
   }
+
   date = new Date();
   todayDate = [
     this.date.getFullYear(),
@@ -171,7 +175,7 @@ export class ReportsComponent implements OnInit, AfterViewInit {
       //full option only changed animateScale on true
       options: {
         title: {
-          display: true,
+          display: false,
           text: 'Monthly balance',
         },
         cutoutPercentage: 0,
@@ -234,7 +238,7 @@ export class ReportsComponent implements OnInit, AfterViewInit {
       //full option only changed animateScale on true
       options: {
         title: {
-          display: true,
+          display: false,
           text: 'Quarterly balance',
         },
         cutoutPercentage: 0,
@@ -324,7 +328,7 @@ export class ReportsComponent implements OnInit, AfterViewInit {
       //full option only changed animateScale on true
       options: {
         title: {
-          display: true,
+          display: false,
           text: 'Yearly balance',
         },
         cutoutPercentage: 0,
