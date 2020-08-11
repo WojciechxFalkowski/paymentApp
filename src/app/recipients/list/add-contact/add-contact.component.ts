@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router } from '@angular/router';
 import { RecipientsService } from './../../../services/recipients.service';
-import { FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
 @Component({
   selector: 'app-add-contact',
@@ -49,8 +48,7 @@ export class AddContactComponent implements OnInit {
   });
   constructor(
     private router: Router,
-    private recipientsService: RecipientsService,
-    private fb: FormBuilder
+    private recipientsService: RecipientsService
   ) {}
 
   ngOnInit(): void {}

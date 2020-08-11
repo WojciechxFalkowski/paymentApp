@@ -7,8 +7,8 @@ import { Person } from './../models/person';
 })
 export class PersonComponent implements OnInit {
   person: Person = {
-    name: 'Emilia',
-    surname: 'Birch',
+    name: 'John',
+    surname: 'Smith',
     street: 'Duke street Studio',
   };
   constructor() {}

@@ -35,11 +35,11 @@ export class MenuComponent implements OnInit {
       url: '/recipients',
       icon: 'people',
     },
-    // {
-    //   name: 'Raports',
-    //   url: '/raports',
-    //   icon: 'assessment',
-    // },
+    {
+      name: 'Reports',
+      url: '/reports',
+      icon: 'assessment',
+    },
     // {
     //   name: 'Settings',
     //   url: '/settings',

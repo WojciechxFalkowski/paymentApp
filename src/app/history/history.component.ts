@@ -57,7 +57,6 @@ export class HistoryComponent implements OnInit {
       }
     }
     this.states[nameTransaction]++;
-    console.log('DZIALA');
   }
   select(transaction) {}
   onKey(event: any) {
@@ -72,6 +71,5 @@ export class HistoryComponent implements OnInit {
         this.newTransactions.push(transaction);
       }
     });
-    console.log('dziala');
   }
 }

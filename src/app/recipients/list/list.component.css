@@ -5,7 +5,7 @@ p {
 .contact-list {
   width: 90%;
   background-color: white;
-  margin: 0 auto;
+  margin: 5vh auto;
 }
 .contact-list__h1 {
   text-align: center;
@@ -50,7 +50,7 @@ p {
 .list__accountNumber {
 }
 .list__div {
-  display: none;
+  /* display: none; */
 }
 .list__div--active {
   display: block;
@@ -66,6 +66,15 @@ p {
   }
 }
 @media (min-width: 1024px) {
+  .contact-list {
+    position: relative;
+  }
+  .contact-list__p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-20px, 10px);
+  }
   .list__li {
     flex-basis: 30%;
   }

@@ -1,13 +1,20 @@
 :host {
   width: 100%;
 }
+.today-chart {
+  padding: 2vh 1vw;
+  margin: 0 0 5vh 0;
+}
 .today-chart__h2 {
   font-size: 1rem;
   text-align: center;
 }
 .today-chart__canvas {
   margin: 0 auto;
-  max-height: 320px;
+  /* max-height: 320px; */
+  max-height: 500px;
+  max-width: 900px;
+  padding: 2vh 0;
 }
 @media (min-width: 640px) {
   :host {

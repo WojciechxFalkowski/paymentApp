@@ -21,6 +21,7 @@ import { WeekChartComponent } from './balances/week-chart/week-chart.component';
 import { TodayChartComponent } from './balances/today-chart/today-chart.component';
 import { AddContactComponent } from './recipients/list/add-contact/add-contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReportsComponent } from './reports/reports.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     WeekChartComponent,
     TodayChartComponent,
     AddContactComponent,
+    ReportsComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       { path: 'cards', component: CardsComponent },
       { path: 'recipients', component: RecipientsComponent },
       { path: 'recipients/add', component: AddContactComponent },
-      { path: 'raports', component: RecentActivityComponent },
+      { path: 'reports', component: ReportsComponent },
       { path: 'settings', component: RecentActivityComponent },
       { path: 'help', component: RecentActivityComponent },
       { path: 'privacy', component: RecentActivityComponent },

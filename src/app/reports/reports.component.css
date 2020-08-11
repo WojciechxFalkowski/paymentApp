@@ -1,0 +1,21 @@
+:host {
+  width: 100%;
+}
+.reports {
+  width: 90%;
+  margin: 5vh auto;
+}
+.reports__div {
+  padding: 2vh 1vw;
+  background-color: white;
+  margin: 5vh 0;
+}
+.reports__canvas-days,
+.reports__canvas-months,
+.reports__canvas-quarters,
+.reports__canvas-years {
+  max-height: 500px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2vh 0;
+}

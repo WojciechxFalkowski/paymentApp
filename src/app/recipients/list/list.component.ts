@@ -13,9 +13,10 @@ export class ListComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-  activeRecipient(event) {
-    this.recipientsList[event.target.id].status = !this.recipientsList[
-      event.target.id
-    ].status;
-  }
+  /**Think about it */
+  // activeRecipient(event) {
+  //   this.recipientsList[event.target.id].status = !this.recipientsList[
+  //     event.target.id
+  //   ].status;
+  // }
 }

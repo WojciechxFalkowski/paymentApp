@@ -15,7 +15,7 @@
   background-position: center;
   background-size: var(--logo) calc(var(--logo) * 2 / 3);
   color: white;
-  margin: 10px;
+  margin: 2vh 1vw;
   border-radius: 5px;
 }
 .card__logo {
@@ -89,7 +89,7 @@
   margin-block-end: 0em;
   background-color: rgba(0, 0, 0, 0.01);
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   :host {
     --logo: 400px;
   }

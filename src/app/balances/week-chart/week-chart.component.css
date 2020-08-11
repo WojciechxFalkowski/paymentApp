@@ -7,5 +7,8 @@
 }
 .week-chart__canvas {
   margin: 0 auto;
-  max-height: 330px;
+  /* max-height: 330px; */
+  max-height: 500px;
+  max-width: 900px;
+  padding: 2vh 0;
 }
