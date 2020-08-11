@@ -82,7 +82,7 @@ export class TodayChartComponent implements OnInit, AfterViewInit {
           yAxes: [
             {
               ticks: {
-                beginAtZero: true,
+                beginAtZero: false,
               },
             },
           ],

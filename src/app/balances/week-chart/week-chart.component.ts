@@ -83,7 +83,7 @@ export class WeekChartComponent implements OnInit, AfterViewInit {
           yAxes: [
             {
               ticks: {
-                beginAtZero: true,
+                beginAtZero: false,
               },
             },
           ],

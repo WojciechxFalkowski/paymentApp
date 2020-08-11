@@ -10,6 +10,12 @@
   background-color: white;
   margin: 5vh 0;
 }
+.reports__h1 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
 .reports__canvas-days,
 .reports__canvas-months,
 .reports__canvas-quarters,
@@ -17,5 +23,5 @@
   max-height: 500px;
   max-width: 900px;
   margin: 0 auto;
-  padding: 2vh 0;
+  padding: 0 0 2vh 0;
 }

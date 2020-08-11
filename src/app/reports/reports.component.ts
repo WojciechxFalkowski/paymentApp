@@ -38,191 +38,6 @@ export class ReportsComponent implements OnInit, AfterViewInit {
     this.date.getMinutes(),
     this.date.getSeconds(),
   ];
-
-  transactions: Array<Transaction> = [
-    {
-      account_id: '3e5c3e6ae9b34cfb971ac14g422aa2cb',
-      ref_id: '',
-      transaction: 'Payment to Doug Mann',
-      type_transaction: 'in',
-      amount: 1800,
-      iso_currency_code: 'USD',
-      status: 'Success',
-      country: 'Poland',
-      authorized_date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2],
-        this.todayDate[3],
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-      date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2],
-        this.todayDate[3],
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-    },
-    {
-      account_id: '22cb68ecccc32d7b90175052f34be544',
-      ref_id: '',
-      transaction: 'Payment from Hank Chase',
-      type_transaction: 'out',
-      amount: 1222,
-      iso_currency_code: 'USD',
-      status: 'Failed',
-      country: 'USA',
-      authorized_date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 1,
-        this.todayDate[3] + 2,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-      date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 1,
-        this.todayDate[3] - 2,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-    },
-    {
-      account_id: '5864bbfde2dc495ab27200f8f94b1b23',
-      ref_id: '',
-      transaction: 'Added from account ****5555',
-      type_transaction: 'in',
-      amount: 4212,
-      iso_currency_code: 'USD',
-      status: 'Success',
-      country: 'Italy',
-      authorized_date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 1,
-        this.todayDate[3] + 1,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-      date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 2,
-        this.todayDate[3] - 5,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-    },
-    {
-      account_id: '75c8086d8bfb4c68a7c7c0270fc1cef7',
-      ref_id: '',
-      transaction: 'Payment from Molly Sanders',
-      type_transaction: 'out',
-      amount: 1000,
-      iso_currency_code: 'USD',
-      status: 'Success',
-      country: 'Germany',
-      authorized_date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 1,
-        this.todayDate[3],
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-      date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 2,
-        this.todayDate[3] - 8,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-    },
-    {
-      account_id: '5a6e0bae3c5c4cb997fe6510bf375c05',
-      ref_id: '',
-      transaction: 'Payment to Molly Sanders',
-      type_transaction: 'In',
-      amount: 475,
-      iso_currency_code: 'USD',
-      status: 'Success',
-      country: 'Germany',
-      authorized_date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 2,
-        this.todayDate[3] - 1,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-      date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 3,
-        this.todayDate[3] - 5,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-    },
-    {
-      account_id: '2e5c3e6ae9b34cfb971ac14e422aa2cb',
-      ref_id: '',
-      transaction: 'Payment to Doug Mann',
-      type_transaction: 'Out',
-      amount: 300,
-      iso_currency_code: 'USD',
-      status: 'Success',
-      country: 'Poland',
-      authorized_date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 3,
-        this.todayDate[3] - 2,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-      date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 4,
-        this.todayDate[3] - 3,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-    },
-    {
-      account_id: '12323f2fc92c471d881698e2f0920df6',
-      ref_id: '',
-      transaction: 'Payment from Hank Chase',
-      type_transaction: 'Out',
-      amount: 1222,
-      iso_currency_code: 'USD',
-      status: 'Success',
-      country: 'USA',
-      authorized_date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 5,
-        this.todayDate[3] - 1,
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-      date: new Date(
-        this.todayDate[0],
-        this.todayDate[1],
-        this.todayDate[2] - 6,
-        this.todayDate[3],
-        this.todayDate[4],
-        this.todayDate[5]
-      ),
-    },
-  ];
   @ViewChild('barchart__canvas__days') chartDays: ElementRef;
   @ViewChild('piechart__canvas') chart: ElementRef;
   @ViewChild('piechart__canvas__quarter') chartQuarter: ElementRef;
@@ -357,7 +172,7 @@ export class ReportsComponent implements OnInit, AfterViewInit {
       options: {
         title: {
           display: true,
-          text: 'Monthly',
+          text: 'Monthly balance',
         },
         cutoutPercentage: 0,
         rotation: -0.5 * Math.PI,
@@ -420,7 +235,7 @@ export class ReportsComponent implements OnInit, AfterViewInit {
       options: {
         title: {
           display: true,
-          text: 'Quarters',
+          text: 'Quarterly balance',
         },
         cutoutPercentage: 0,
         rotation: -0.5 * Math.PI,
@@ -510,7 +325,7 @@ export class ReportsComponent implements OnInit, AfterViewInit {
       options: {
         title: {
           display: true,
-          text: 'Years',
+          text: 'Yearly balance',
         },
         cutoutPercentage: 0,
         rotation: -0.5 * Math.PI,

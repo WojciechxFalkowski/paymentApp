@@ -84,6 +84,11 @@ tr td:first-child {
   box-shadow: 0px 0px 10px 2px rgb(154, 248, 125);
   color: #036672;
 }
+.recent-activity__p--red {
+  background-color: rgba(255, 107, 88, 0.753);
+  box-shadow: 0px 0px 10px 2px rgb(255, 107, 88);
+  color: #036672;
+}
 .recent-activity__td:nth-child(4) {
   color: rgb(134, 134, 134);
 }

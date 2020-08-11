@@ -51,7 +51,7 @@
       <td class="recent-activity__td">{{transtaction.amount | currency}} <span>USD</span></td>
       <td class="recent-activity__td">
         <p
-          [ngClass]="transtaction.status=='Success'? 'recent-activity__p--green' : transtaction.status=='Processing'?'recent-activity__p--yellow':''">
+          [ngClass]="transtaction.status=='Success'? 'recent-activity__p--green' : transtaction.status=='Processing'?'recent-activity__p--yellow':'recent-activity__p--red'">
           {{transtaction.status}}</p>
       </td>
       <td class="recent-activity__td">{{transtaction.date|date:'MMM dd, yyyy'}}</td>
