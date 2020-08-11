@@ -159,7 +159,7 @@
 }
 @media (min-width: 1024px) {
   .menu {
-    max-width: 300px;
+    max-width: 200px;
   }
   .main {
     width: 100%;
