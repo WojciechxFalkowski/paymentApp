@@ -25,6 +25,12 @@
   margin: 0 auto;
   padding: 0 0 2vh 0;
 }
+.reports__canvas-months,
+.reports__canvas-quarters,
+.reports__canvas-years {
+  max-height: 350px;
+  max-width: 700px;
+}
 @media (min-width: 768px) {
   .reports__h1 {
     font-size: 1rem;
