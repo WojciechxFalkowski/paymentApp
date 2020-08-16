@@ -15,6 +15,7 @@
   text-transform: uppercase;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
+  /* letter-spacing: 10px; */
 }
 .reports__canvas-days,
 .reports__canvas-months,
@@ -28,9 +29,10 @@
 .reports__canvas-months,
 .reports__canvas-quarters,
 .reports__canvas-years {
-  max-height: 350px;
-  max-width: 700px;
+  max-height: 300px;
+  max-width: 500px;
 }
+
 @media (min-width: 768px) {
   .reports__h1 {
     font-size: 1rem;

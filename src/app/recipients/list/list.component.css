@@ -40,17 +40,11 @@ p {
 .list__name {
   text-decoration: underline;
   font-weight: bold;
-  cursor: pointer;
   display: inline-block;
 }
 
 .list__span {
   transform: translateY(20%);
-}
-.list__accountNumber {
-}
-.list__div {
-  /* display: none; */
 }
 .list__div--active {
   display: block;
