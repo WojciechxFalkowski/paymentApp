@@ -4,7 +4,6 @@
 .lab {
   width: 100%;
   text-align: center;
-  /* background-color: white; */
   padding: 2vh 0 2vh 0;
 }
 .label {
@@ -17,7 +16,6 @@
   padding: 0.5vh 0;
   margin-left: 1vw;
   border: none;
-  /* padding: 5px 20px; */
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(165, 165, 165);
@@ -27,7 +25,6 @@
 .recent-activity__table {
   font-size: 0.8rem;
   text-align: center;
-  /* background-color: white; */
   border-collapse: collapse;
   margin: 0 auto;
   margin-bottom: 5vh;
@@ -36,7 +33,6 @@
 .recent-activity__th {
   font-size: 0.7rem;
 }
-
 .recent-activity__tr:nth-child(1) {
   margin-bottom: 1vh;
   background-color: #fbfdfe;
@@ -80,7 +76,6 @@ tr td:first-child {
   color: black;
   transform: rotate(180deg);
 }
-
 .recent-activity__td:nth-child(1) {
   padding-left: 1vw;
   color: rgb(134, 134, 134);
@@ -130,9 +125,5 @@ tr td:first-child {
   }
   .recent-activity__span {
     font-size: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  .recent-activity__table {
   }
 }

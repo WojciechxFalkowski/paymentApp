@@ -25,6 +25,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { HelpComponent } from './help/help.component';
 import { DisputeComponent } from './help/dispute/dispute.component';
+import { SettingsComponent } from './settings/settings.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { DisputeComponent } from './help/dispute/dispute.component';
     PrivacyComponent,
     HelpComponent,
     DisputeComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,7 @@ import { DisputeComponent } from './help/dispute/dispute.component';
       { path: 'recipients', component: RecipientsComponent },
       { path: 'recipients/add', component: AddContactComponent },
       { path: 'reports', component: ReportsComponent },
-      { path: 'settings', component: RecentActivityComponent },
+      { path: 'settings', component: SettingsComponent },
       { path: 'help', component: HelpComponent },
       { path: 'privacy', component: PrivacyComponent },
     ]),

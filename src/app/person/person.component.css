@@ -14,8 +14,6 @@
   border-radius: 50%;
   margin-right: 2vw;
 }
-.person {
-}
 .name {
   font-weight: bold;
 }
@@ -27,7 +25,6 @@
 }
 .main__button {
   padding: 5px 10px;
-  /* border-radius: 5px; */
   border-width: 2px;
   border-style: solid;
   cursor: pointer;

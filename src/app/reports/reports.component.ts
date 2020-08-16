@@ -46,7 +46,6 @@ export class ReportsComponent implements OnInit, AfterViewInit {
   @ViewChild('piechart__canvas') chart: ElementRef;
   @ViewChild('piechart__canvas__quarter') chartQuarter: ElementRef;
   @ViewChild('piechart__canvas__year') chartYear: ElementRef;
-  // @ViewChild('legend') legend: ElementRef;
   canvas: any;
   ctx: any;
 
@@ -95,7 +94,6 @@ export class ReportsComponent implements OnInit, AfterViewInit {
           display: false,
           labels: {},
           position: 'right',
-          // fullWidth: true,
         },
       },
     });
@@ -169,13 +167,10 @@ export class ReportsComponent implements OnInit, AfterViewInit {
               'rgba(0, 0, 0, 1)',
             ],
             hoverBorderWidth: 3,
-            weight: 1, //default
+            weight: 1,
           },
         ],
-
-        // These labels appear in the legend and in the tooltips when hovering different arcs
       },
-      //full option only changed animateScale on true
       options: {
         title: {
           display: false,
@@ -235,13 +230,10 @@ export class ReportsComponent implements OnInit, AfterViewInit {
               'rgba(0, 0, 0, 1)',
             ],
             hoverBorderWidth: 3,
-            weight: 1, //default
+            weight: 1,
           },
         ],
-
-        // These labels appear in the legend and in the tooltips when hovering different arcs
       },
-      //full option only changed animateScale on true
       options: {
         title: {
           display: false,
@@ -328,77 +320,17 @@ export class ReportsComponent implements OnInit, AfterViewInit {
               'rgba(0, 0, 0, 1)',
             ],
             hoverBorderWidth: 3,
-            weight: 1, //default
+            weight: 1,
           },
         ],
-
-        // These labels appear in the legend and in the tooltips when hovering different arcs
       },
-      //full option only changed animateScale on true
       options: {
         legend: {
           display: true,
           position: 'right',
-          // fullWidth: true,
         },
-        // legendCallback: function (chart) {
-        //   var legendHtml = [];
-        //   legendHtml.push('<ul>');
-        //   var item = chart.data.datasets[0];
-        //   for (var i = 0; i < item.data.length; i++) {
-        //     legendHtml.push('<li style="display: flex;align-items: center;">');
-        //     legendHtml.push(
-        //       '<span class="chart-legend" style="display: inline-block;box-sizing:border-box;width:50px;height:14px;margin-right:5px;border:1px solid ' +
-        //         item.borderColor[i] +
-        //         ';background-color:' +
-        //         item.backgroundColor[i] +
-        //         '"></span>'
-        //     );
-        //     legendHtml.push(
-        //       '<span class="chart-legend-label-text" style="font-size:14px">' +
-        //         chart.data.labels[i] +
-        //         '</span>'
-        //     );
-        //     legendHtml.push('</li>');
-        //   }
-
-        //   legendHtml.push('</ul>');
-        //   return legendHtml.join('');
-        // },
-        // tooltips: {
-        //   enabled: true,
-        //   mode: 'label',
-        //   callbacks: {
-        //     label: function (tooltipItem, data) {
-        //       var indice = tooltipItem.index;
-        //       return (
-        //         data.datasets[0].data[indice] +
-        //         ' person visited ' +
-        //         data.labels[indice] +
-        //         ' times'
-        //       );
-        //     },
-        //   },
-        // },
-        // title: {
-        //   display: false,
-        //   text: 'Yearly balance',
-        // },
-
-        // cutoutPercentage: 0,
-        // rotation: -0.5 * Math.PI,
-        // circumference: 2 * Math.PI,
-        // animation: {
-        //   animateRotate: true,
-        //   animateScale: true,
-        // },
       },
     });
-    // console.log(this.legend);
-    // console.log(abd.generateLegend());
-
-    // this.legend.nativeElement.innerHTML = abd.generateLegend();
-    // console.log(this.legend);
   }
 
   ngOnInit(): void {}

@@ -5,13 +5,10 @@
   <p class="transaction__p">Transaction ID<span class="transaction__span">{{transaction.account_id}}</span></p>
   <p class="transaction__p">Transaction name<span class="transaction__span">{{transaction.transaction}}</span></p>
   <p class="transaction__p">Amount<span class="transaction__span">{{transaction.amount|currency}}</span></p>
-
-
-
   <p class="transaction__p">Currency<span class="transaction__span">{{transaction.iso_currency_code}}</span></p>
   <p class="transaction__p"><span class="transaction__span">{{transaction.ref_id}}</span></p>
   <p class="transaction__p">Status<span class="transaction__span">{{transaction.status}}</span></p>
-  <p class="transaction__p"><span class="transaction__span">{{transaction.type_transaction}}</span></p>
+  <p class="transaction__p">Type transaction<span class="transaction__span">{{transaction.type_transaction}}</span></p>
   <p class="transaction__p">From<span class="transaction__span">{{transaction.country}}</span></p>
   <p class="transaction__p">
     Date<span class="transaction__span">{{transaction.date |date:'MMM dd, yyyy hh:mm:ss '}}</span></p>

@@ -1,14 +1,12 @@
 :host {
   --logo: 300px;
 }
-
 .card {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
   justify-content: space-around;
-  /* background-image: url("./../../assets/images/cards/ship-640x438.jpg"); */
   width: var(--logo);
   height: calc(var(--logo) * 2 / 3);
   background-repeat: no-repeat;
@@ -62,7 +60,6 @@
 .card__expiry-date {
   position: relative;
   align-self: center;
-  /* margin-block-start: 0em; */
   margin-block-end: 0em;
   background-color: rgba(0, 0, 0, 0.01);
 }

@@ -40,11 +40,11 @@ export class MenuComponent implements OnInit {
       url: '/reports',
       icon: 'assessment',
     },
-    // {
-    //   name: 'Settings',
-    //   url: '/settings',
-    //   icon: 'settings',
-    // },
+    {
+      name: 'Settings',
+      url: '/settings',
+      icon: 'settings',
+    },
     {
       name: 'Help',
       url: '/help',
@@ -56,9 +56,7 @@ export class MenuComponent implements OnInit {
       icon: 'privacy_tip',
     },
   ];
-
   constructor() {}
-
   ngOnInit(): void {}
   select(item) {
     this.eventA.emit(item);

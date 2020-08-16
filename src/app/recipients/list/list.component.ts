@@ -11,12 +11,5 @@ export class ListComponent implements OnInit {
   constructor(private recipientsService: RecipientsService) {
     this.recipientsList = recipientsService.getRecipients();
   }
-
   ngOnInit(): void {}
-  /**Think about it */
-  // activeRecipient(event) {
-  //   this.recipientsList[event.target.id].status = !this.recipientsList[
-  //     event.target.id
-  //   ].status;
-  // }
 }

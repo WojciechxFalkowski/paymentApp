@@ -5,8 +5,6 @@
     <li class="list__li" *ngFor="let recipient of recipientsList;index as i">
       <p class="list__name" id={{i}}>{{recipient.name}} {{recipient.surname}}
       </p>
-      <!-- <p class="list__name" (click)="activeRecipient($event)" id={{i}}>{{recipient.name}} {{recipient.surname}}
-      </p> -->
       <p class="list__accountNumber">{{recipient.accountNumber}}</p>
       <div class="list__div" [ngClass]="recipient.status?'list__div--active':''">
         <p>{{recipient.email}}</p>

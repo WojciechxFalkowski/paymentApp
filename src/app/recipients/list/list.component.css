@@ -25,7 +25,6 @@ p {
 
 .list {
   width: 90%;
-  /* height: 70%; */
   margin: 0 auto;
   list-style: none;
   text-align: center;
@@ -42,12 +41,8 @@ p {
   font-weight: bold;
   display: inline-block;
 }
-
 .list__span {
   transform: translateY(20%);
-}
-.list__div--active {
-  display: block;
 }
 @media (min-width: 640px) {
   .list {

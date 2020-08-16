@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Transaction } from './../models/transaction';
-// import { InputServiceService } from './../services/input-service.service';
 import { DataService } from './../services/data.service';
 @Component({
   selector: 'app-recent-activity',
@@ -21,14 +20,9 @@ export class RecentActivityComponent implements OnInit {
     date: 0,
   };
   constructor(private dataService: DataService) {
-    // this.inputService.getValue().subscribe((transactions) => {
-    //   this.transactions = transactions;
-    // });
     this.transactions = dataService.getLastTransactions(5);
   }
-
   ngOnInit(): void {}
-
   onClickTransaction(nameTransaction) {
     nameTransaction = nameTransaction.toLowerCase();
     this.flag = this.flag.toLowerCase();
@@ -43,7 +37,6 @@ export class RecentActivityComponent implements OnInit {
       };
       this.status = !this.status;
       this.flag = nameTransaction;
-      /**SORT METHOD */
       for (let j = 0; j < this.transactions.length - 1; j++) {
         for (let i = 0; i < this.transactions.length - 1; i++) {
           if (

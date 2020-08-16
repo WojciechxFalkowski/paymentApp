@@ -9,8 +9,6 @@
   z-index: 2;
   transform: scale(0.7);
 }
-
-/* HAMBURGER */
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -73,9 +71,6 @@
 .hamburger-inner::after {
   bottom: -10px;
 }
-/*
-   * Arrow
-   */
 .hamburger--arrow.is-active .hamburger-inner::before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
@@ -102,7 +97,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* min-height: 100vh; */
   width: 100%;
   margin: 0 auto;
 }
@@ -113,24 +107,11 @@
   height: 100%;
 }
 @media (min-width: 500px) {
-  .container {
-  }
-  /* .mobile-menu {
-    display: none;
-    height: auto;
-  } */
   .menu {
-    /* position: unset; */
-    /* top: unset; */
-    /* left: unset; */
     width: 35vw;
-    /* height: unset; */
-    /* transform: unset; */
   }
 }
 @media (min-width: 768px) {
-  .container {
-  }
   .mobile-menu {
     display: none;
     height: auto;
@@ -139,7 +120,6 @@
     position: unset;
     top: unset;
     left: unset;
-    /* width: 35vw; */
     max-width: 180px;
     height: unset;
     transform: unset;
@@ -150,11 +130,6 @@
   }
   .label__input {
     font-size: 1.1rem;
-  }
-}
-@media (orientation: portrait) and (min-width: 768px) {
-  .menu {
-    /* width: 220px; */
   }
 }
 @media (min-width: 1024px) {

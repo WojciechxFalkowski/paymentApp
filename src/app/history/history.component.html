@@ -1,11 +1,7 @@
 <div class="recent-activity">
-
-
   <div class="lab"><label class="main__label label" for="label__input"><i
         class='material-icons label__img'>search</i><input class="label__input" id="label__input"
         (input)="onKey($event)" placeholder="Search transaction"></label></div>
-  <!-- <h4 class="recent-activity__h4">Recent activity ({{newTransactions.length}})
-  </h4> -->
   <table class="recent-activity__table">
     <tr class="recent-activity__tr">
       <th #box class="recent-activity__th" (click)="onClickTransaction('Transaction')">{{"Transaction"|uppercase}}
@@ -16,37 +12,25 @@
       <th class="recent-activity__th" (click)="onClickTransaction('Amount')">{{"Amount"|uppercase}} <div
           class="recent-activity__div">
           <span class="material-icons recent-activity__span" [ngClass]="states.amount!==0 ?  states.amount%2==0?'recent-activity__span--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
-
-
         </div>
       </th>
       <th class="recent-activity__th" (click)="onClickTransaction('Status')">{{"Status"|uppercase}} <div
           class="recent-activity__div">
           <span class="material-icons recent-activity__span" [ngClass]="states.status!==0 ?  states.status%2==0?'recent-activity__svg--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
-
-
         </div>
       </th>
       <th class="recent-activity__th" (click)="onClickTransaction('Date')">{{"Date"|uppercase}} <div
           class="recent-activity__div">
           <span class="material-icons recent-activity__span" [ngClass]="states.date!==0 ?  states.date%2==0?'recent-activity__svg--color' : 'recent-activity__span--active-color' :''"> keyboard_arrow_down </span>
-
-
         </div>
       </th>
     </tr>
     <tr class="recent-activity__tr" *ngFor="let transtaction of newTransactions">
       <td class="recent-activity__td">
-
-
-
         <p class="recent-activity__p" [routerLink]="['/history',transtaction.account_id]"
           (click)="select(transtaction)">
           {{transtaction.transaction}}
         </p>
-
-
-
       </td>
       <td class="recent-activity__td">{{transtaction.amount | currency}} <span>USD</span></td>
       <td class="recent-activity__td">
@@ -55,7 +39,6 @@
           {{transtaction.status}}</p>
       </td>
       <td class="recent-activity__td">{{transtaction.date|date:'MMM dd, yyyy'}}</td>
-
     </tr>
   </table>
 </div>

@@ -24,9 +24,7 @@ export class HistoryComponent implements OnInit {
     this.transactions = dataService.getTransactions();
     this.newTransactions = dataService.getTransactions();
   }
-
   ngOnInit(): void {}
-
   onClickTransaction(nameTransaction) {
     nameTransaction = nameTransaction.toLowerCase();
     this.flag = this.flag.toLowerCase();
@@ -41,7 +39,6 @@ export class HistoryComponent implements OnInit {
       };
       this.status = !this.status;
       this.flag = nameTransaction;
-      /**SORT METHOD */
       for (let j = 0; j < this.newTransactions.length - 1; j++) {
         for (let i = 0; i < this.newTransactions.length - 1; i++) {
           if (

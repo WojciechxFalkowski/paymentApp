@@ -14,7 +14,7 @@ export class TransactionComponent implements OnInit {
     account_id: '',
     ref_id: '',
     transaction: '',
-    type_transaction: '', //wpływ na rachunek,zakup przy uzyciu karty
+    type_transaction: '',
     amount: 0,
     iso_currency_code: '',
     status: '',

@@ -1,10 +1,6 @@
-.menu {
-}
-
 .menu__ul {
   display: flex;
   margin-block-start: unset;
-  /* height: 70vh; */
   flex-direction: column;
   padding-inline-start: 0;
   justify-content: space-between;
@@ -27,14 +23,6 @@
   background-color: #05505c;
   outline: 1px solid #05505c;
 }
-.menu__li:nth-child(1),
-.menu__li:nth-child(2),
-.menu__li:nth-child(3),
-.menu__li:nth-child(4),
-.menu__li:nth-child(5),
-.menu__li:nth-child(6) {
-  /* background-color: #047e8b; */
-}
 .menu__p {
   display: flex;
   color: white;
@@ -56,9 +44,6 @@
   .menu__ul {
     margin-block-start: unset;
     margin-block-end: unset;
-  }
-  .menu__li {
-    /* padding: unset; */
   }
 }
 @media (min-width: 768px) {
