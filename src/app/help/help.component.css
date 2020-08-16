@@ -1,0 +1,12 @@
+.help {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: white;
+  padding: 1vh 5vw;
+  margin: 5vh auto;
+  opacity: 0.9;
+}
+.help__h1 {
+  font-size: 1.4rem;
+  color: #036672;
+}

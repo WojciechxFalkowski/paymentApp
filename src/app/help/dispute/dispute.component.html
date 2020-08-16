@@ -1,0 +1,8 @@
+<div class="dispute" *ngIf="dispute.titleLetter">
+  <h2 class="dispute__h2"><span class="dispute__span">{{dispute.titleLetter}}. </span>{{dispute.title}}</h2>
+  <p class="dispute__p"><span class="dispute__span">EXAMPLE: </span>{{dispute.example}}</p>
+  <p class="dispute__p"><span class="dispute__span">RESOLUTION: </span>{{dispute.resolution}}</p>
+  <ul class="dispute__ul" *ngIf="dispute.ul.li[0]">
+    <li class="dispute__li" *ngFor="let li of dispute.ul.li">{{li}}</li>
+  </ul>
+</div>

@@ -23,6 +23,8 @@ import { AddContactComponent } from './recipients/list/add-contact/add-contact.c
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReportsComponent } from './reports/reports.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { HelpComponent } from './help/help.component';
+import { DisputeComponent } from './help/dispute/dispute.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     AddContactComponent,
     ReportsComponent,
     PrivacyComponent,
+    HelpComponent,
+    DisputeComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
       { path: 'recipients/add', component: AddContactComponent },
       { path: 'reports', component: ReportsComponent },
       { path: 'settings', component: RecentActivityComponent },
-      { path: 'help', component: RecentActivityComponent },
+      { path: 'help', component: HelpComponent },
       { path: 'privacy', component: PrivacyComponent },
     ]),
     FormsModule,

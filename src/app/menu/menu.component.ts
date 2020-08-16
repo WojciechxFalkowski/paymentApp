@@ -45,11 +45,11 @@ export class MenuComponent implements OnInit {
     //   url: '/settings',
     //   icon: 'settings',
     // },
-    // {
-    //   name: 'Help',
-    //   url: '/help',
-    //   icon: 'help_outline',
-    // },
+    {
+      name: 'Help',
+      url: '/help',
+      icon: 'help_outline',
+    },
     {
       name: 'Privacy',
       url: '/privacy',

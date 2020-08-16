@@ -1,0 +1,11 @@
+.dispute__h2 {
+  font-size: 1rem;
+  color: #036672;
+}
+
+.dispute__span {
+  font-weight: bold;
+}
+.dispute__ul {
+  padding-inline-start: 20px;
+}

@@ -7,9 +7,11 @@
 }
 .privacy__h1 {
   font-size: 1.5rem;
+  color: #036672;
 }
 .privacy__h2 {
   font-size: 1.4rem;
+  color: #036672;
 }
 .privacy__div-img {
   text-align: center;
@@ -29,10 +31,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .privacy {
-    padding: 1vh 7vw;
-    margin: 5vh auto;
-  }
   .privacy__img {
     max-width: 500px;
   }
