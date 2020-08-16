@@ -40,16 +40,16 @@ export class MenuComponent implements OnInit {
       url: '/reports',
       icon: 'assessment',
     },
-    {
-      name: 'Settings',
-      url: '/settings',
-      icon: 'settings',
-    },
-    {
-      name: 'Help',
-      url: '/help',
-      icon: 'help_outline',
-    },
+    // {
+    //   name: 'Settings',
+    //   url: '/settings',
+    //   icon: 'settings',
+    // },
+    // {
+    //   name: 'Help',
+    //   url: '/help',
+    //   icon: 'help_outline',
+    // },
     {
       name: 'Privacy',
       url: '/privacy',

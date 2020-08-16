@@ -1,0 +1,39 @@
+.privacy {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: white;
+  padding: 1vh 5vw;
+  margin: 5vh auto;
+}
+.privacy__h1 {
+  font-size: 1.5rem;
+}
+.privacy__h2 {
+  font-size: 1.4rem;
+}
+.privacy__div-img {
+  text-align: center;
+}
+.privacy__img {
+  width: 100%;
+}
+.privacy__ul {
+  padding-inline-start: 20px;
+}
+.privacy__li {
+  margin: 2vh auto;
+}
+@media (min-width: 640px) {
+  .privacy__img {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .privacy {
+    padding: 1vh 7vw;
+    margin: 5vh auto;
+  }
+  .privacy__img {
+    max-width: 500px;
+  }
+}
